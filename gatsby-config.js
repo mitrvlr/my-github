@@ -3,6 +3,7 @@ module.exports = {
     title: `DDD`,
     description: `daily dev diary`,
     author: `@mitrvlr`,
+    og: `src/assets/images/open-graph.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -51,7 +52,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-slug`,

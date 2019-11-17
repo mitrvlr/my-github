@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title={`${data.site.siteMetadata.title} | ${data.site.siteMetadata.description}`} />
       <div className="layout__row">
         <article className="post__articles">
           <h2 className="a11y">My posts</h2>
@@ -61,6 +61,12 @@ export const pageQuery = graphql`
       group(field: frontmatter___tags) {
         fieldValue
         totalCount
+      }
+    }
+    site {
+      siteMetadata {
+        title
+        description
       }
     }
   }

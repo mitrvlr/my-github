@@ -2,7 +2,7 @@
 path: '/posts/tdd'
 date: 2018-06-21
 title: 'TDD'
-tags: ["front-end"]
+tags: ['front-end']
 ---
 
 # TDD

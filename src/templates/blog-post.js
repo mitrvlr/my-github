@@ -4,15 +4,20 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 
 export default function Template({ data }) {
-  const { markdownRemark: post } = data;
+  const { markdownRemark: post, site: meta } = data;
   const {
     title,
     tags,
   } = post.frontmatter;
 
+  const {
+    title: metaTitle,
+    description
+  } = meta.siteMetadata;
+
   return (
     <Layout>
-      <Helmet title={`Your Blog Name - ${title}`} />
+      <Helmet title={`${metaTitle} | ${description} - ${title}`} />
       <div className="layout__row">
         <article className="post__article">
           <header className="post__article__header">
@@ -43,6 +48,12 @@ export const query = graphql`
         date(formatString: "MMMM DD, YYYY")
       }
       html
+    }
+    site {
+      siteMetadata {
+        title
+        description
+      }
     }
   }
 `

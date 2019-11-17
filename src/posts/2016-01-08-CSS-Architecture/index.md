@@ -2,7 +2,7 @@
 path: '/posts/css-architecture'
 date: 2016-01-08
 title: 'about CSS Architecture'
-tags: ['front-end', 'css']
+tags: ['front-end','css']
 ---
 
 ![book-covers](https://cloud.githubusercontent.com/assets/24470477/23197921/008b44ce-f907-11e6-81b5-1a69131fc1e9.png)

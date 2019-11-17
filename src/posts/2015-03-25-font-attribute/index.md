@@ -2,7 +2,7 @@
 path: '/posts/font-attribute'
 date: 2015-03-25
 title: 'Font attribute'
-tags: ['front-end', 'css']
+tags: ['front-end','css']
 ---
 
 ## css font Attribute

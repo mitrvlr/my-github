@@ -1,0 +1,42 @@
+/*
+* global variables
+*/
+
+// override sass-mq breakpoints
+$mq-breakpoints: (
+  x-small: 400px,
+  small: 560px,
+  medium: 720px,
+  large: 960px,
+  huge: 1280px,
+  x-large: 1600px,
+);
+
+// layout
+$layouts: (
+  small: 48rem,
+  medium: 76rem,
+  default: 98rem,
+  large: 112rem,
+);
+
+$gutter-small: 1.5rem;
+$gutter-large: 3rem;
+
+$header-h: 6.2rem;
+$header-w: 22rem;
+
+$z-indexes: (
+  overlay: 1001,
+  modal: 101,
+  dropdown: 11,
+  default: 1,
+);
+
+// transition & animation
+$dur: 0.2s;
+$ease-out: ease-out;
+$ease-balance: ease-in-out;
+$ease-cb: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+$ease-basic: $ease-out;

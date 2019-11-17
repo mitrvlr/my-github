@@ -1,0 +1,151 @@
+/*
+* Mixin
+*/
+
+@mixin break-word {
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+@mixin full-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@mixin a11y {
+  position: absolute !important;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+}
+
+@mixin backdrop($mh: 10rem) {
+  $gradient-colors: (
+    map-get($color-pallet, orange),
+    map-get($color-pallet, pink),
+    map-get($color-pallet, purple),
+    map-get($color-pallet, indigo),
+  );
+
+  min-height: $mh;
+  background: linear-gradient(-45deg, $gradient-colors);
+  background-size: 400% 400%;
+  animation: placeholder-gradient $dur*86 linear infinite;
+
+  @keyframes placeholder-gradient {
+    0% {
+      background-position: 0 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0 50%
+    }
+  }
+}
+
+@mixin icon-arrow($pseudo: 'before', $dir: null, $size: null, $thin: null, $color: null) {
+  #{'&:' + $pseudo} {
+    content: '';
+    display: block;
+    width: if($size, $size + rem, null);
+    height: if($size, $size + rem, null);
+    border-width: if($thin, $thin + rem, null);
+    border-top-style: solid;
+    border-right-style: solid;
+    border-color: if($color, $color, null);
+
+    @if ($dir == 'up') {
+      transform: translate3d(0, -50%, 0) rotate(-45deg);
+    } @else if ($dir == 'left') {
+      transform: translate3d(0, -50%, 0) rotate(-135deg);
+    } @else if ($dir == 'right') {
+      transform: translate3d(0, -50%, 0) rotate(45deg);
+    } @else  {
+      transform: translate3d(0, -50%, 0) rotate(135deg);
+    }
+    
+    @content;
+  }
+}
+
+@mixin layout($size: null) {
+  padding-left: $gutter-small;
+  padding-right: $gutter-small;
+  
+  @include mq(large) {
+    margin-left: auto;
+    margin-right: auto;
+    
+    @if ($size) {
+      padding-left: percentage($gutter-large/map-get($layouts, $size));
+      padding-right: percentage($gutter-large/map-get($layouts, $size));
+      max-width: map-get($layouts, $size);
+    } @else {
+      padding-left: percentage($gutter-large/map-get($layouts, default));
+      padding-right: percentage($gutter-large/map-get($layouts, default));
+      max-width: map-get($layouts, default);
+    }
+  }
+}
+
+@mixin transition($prop: null, $time: null, $func: null) {
+  @if ($prop) {
+    transition-property: $prop;
+  } @else {
+    transition-property: all;
+  }
+  
+  @if ($time) {
+    transition-duration: $time;
+  } @else {
+    transition-duration: $dur;
+  }
+  
+  @if ($func) {
+    transition-timing-function: $func;
+  } @else {
+    transition-timing-function: $ease-basic;
+  }
+}
+
+@mixin ellipsis($lines: null) {
+  @if ($lines) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+  } @else {
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+  }
+}
+
+@mixin middle($child: '&-cell') {
+  white-space: nowrap;
+  
+  #{$child} {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    @content;
+  }
+  
+  &:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}

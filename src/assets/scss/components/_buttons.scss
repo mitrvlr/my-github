@@ -1,0 +1,23 @@
+/*
+* buttons
+*/
+
+.btn {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  padding: .8rem 2.9rem;
+  border: .1rem solid color(primary);
+  min-width: 8.6rem;
+  font-weight: bold;
+  background-color: color(primary);
+  color: color(surface);
+  text-align: center;
+  @include transition();
+
+  &:hover,
+  &:focus {
+    border-color: dark(color(primary), 15);
+    background-color: dark(color(primary), 15);
+  }
+}

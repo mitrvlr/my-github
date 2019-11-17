@@ -1,0 +1,47 @@
+/*
+* nav
+*/
+.nav {
+  position: relative;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  height: 100vh;
+
+  &__menu {
+    li {
+      padding-top: .8rem;
+      padding-bottom: .8rem;
+
+      & ~ li {
+        border-top: .1rem solid color(edge);
+      }
+    }
+
+    &__link {
+      @include transition();
+      display: block;
+      padding: 1.2rem 1.2rem;
+      font-size: font(footnote);
+      text-transform: capitalize;
+      border-radius: .6rem;
+
+      &:hover,
+      &:focus {
+        background-color: color(primary);
+        color: color(white);
+      }
+    }
+  }
+
+  &__toggle {
+
+  }
+
+  &__opener {
+    position: absolute;
+    top: 0;
+    left: $header-w;
+    width: 4rem;
+    height: 4rem;
+  }
+}

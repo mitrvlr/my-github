@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/animals/","webpackCompilationHash":"","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/2018-06-21-TDD/"},"frontmatter":{"title":"TDD"}}}]}},"pageContext":{"isCreatedByStatefulCreatePages":false,"tag":"animals"}}}

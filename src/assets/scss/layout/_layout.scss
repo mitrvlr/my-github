@@ -1,0 +1,16 @@
+/*
+* layout
+*/
+
+.layout {
+
+  &__row {
+    @include layout(medium);
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

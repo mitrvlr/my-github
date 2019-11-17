@@ -1,0 +1,40 @@
+/*
+* fonts config
+*/
+
+// [filename]: ([font-family]: [weight])
+$font-family: (
+  IropkeBatangM: (
+    IropkeBatang,
+    400,
+  ),
+);
+
+$font-scheme: (
+  headline: 4.8rem,
+  notice: 3.2rem,
+  title: 2.8rem,
+  topic: 2.4rem,
+  abstract: 1.6rem,
+  contents: 1.4rem,
+  footnote: 1.2rem,
+  root: 1rem,
+);
+
+$font-base: 'IropkeBatang', sans-serif;
+
+// generate font-face
+@mixin font-face($filename, $family, $weight: 400) {
+  @font-face {
+    font-family: '#{$family}';
+    font-style: normal;
+    font-weight: $weight;
+    src: url('../../fonts/#{$filename}.eot');
+    src: url('../../fonts/#{$filename}.woff2') format('woff2'), url('../../fonts/#{$filename}.woff') format('woff');
+    font-display: swap;
+  }
+}
+
+@each $filename, $props in $font-family {
+  @include font-face($filename, $props...);
+}

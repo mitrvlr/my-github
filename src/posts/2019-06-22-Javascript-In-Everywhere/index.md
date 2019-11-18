@@ -1,7 +1,7 @@
 ---
 path: '/posts/javascript-in-everywhere'
 date: 2019-06-22
-title: 'Javascript in everywhere'
+title: '[Conf] Javascript in everywhere'
 tags: ['conference review']
 ---
 

@@ -74,11 +74,10 @@
     height: 100%;
     border-radius: .4rem;
     background-color: color(white);
-    box-shadow: 0 0 .4rem .2rem rgba(color(forground), .2);
 
     &:hover,
     &:focus {
-      box-shadow: 0 0 .8rem .2rem rgba(color(veiled), .2);
+      box-shadow: .1rem .1rem .2rem .2rem rgba(color(backgorund), .1);
       color: color(primary);
     }
   }
@@ -140,6 +139,7 @@
   padding-bottom: 8rem;
   background-color: color(white);
   border-radius: .6rem;
+  box-shadow: .1rem .1rem .2rem .2rem rgba(color(backgorund), .1);
 
   &__header {
     @include backdrop(0);

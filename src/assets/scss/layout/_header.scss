@@ -25,6 +25,7 @@
     align-items: center;
 
     .github {
+      display: none;
       @include transition($time: $dur*2, $func: cubic-bezier(0.680, -0.550, 0.265, 1.550));
       position: absolute;
       top: 100%;
@@ -99,6 +100,15 @@
     &:active,
     &:focus {
       opacity: 0.85;
+    }
+  }
+  
+  @include mq(large) {
+    &__author {
+
+      .github {
+        display: block;
+      }
     }
   }
 }

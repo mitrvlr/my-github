@@ -66,7 +66,7 @@ const Header = ({ siteTitle, siteDescription, siteAuthor, tags}) => {
                 </g>
               </g>
             </svg>
-            <span className="header__buy-me-a-coffee__txt">Buy me a Coffee !</span>
+            <span className="header__buy-me-a-coffee__txt">Was it useful?</span>
           </a>
         </div>
         {/*<Nav tags={tags} />*/}

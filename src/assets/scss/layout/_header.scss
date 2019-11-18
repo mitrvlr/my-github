@@ -7,16 +7,29 @@
 
   &__title {
     font-size: font(title);
+    letter-spacing: .08rem;
   }
 
   &__desc {
-    margin-left: .4rem;
+    @include transition();
+    margin-left: .5rem;
     font-size: font(contents);
+
+    .header__link:hover &,
+    .header__link:focus & {
+      color: color(info);
+    }
   }
 
   &__link {
+    @include transition();
     display: flex;
-    align-items: baseline;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      color: color(primary);
+    }
   }
 
   &__utils {
@@ -26,7 +39,7 @@
     display: flex;
     align-items: center;
     margin-top: 1.2rem;
-    padding: .6rem 1.2rem;
+    padding: 1.2rem 2.6rem;
     font-size: font(abstract);
     border-radius: .4rem;
     color: color(white);
@@ -34,14 +47,13 @@
 
   &__author {
     position: relative;
+    z-index: z(floor);
     display: flex;
     align-items: center;
     font-family: 'Cookie', cursive;
 
     .octicon {
       display: inline-flex;
-      margin-left: 1.2rem;
-      margin-right: 1.2rem;
 
       path {
         @include transition();

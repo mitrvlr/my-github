@@ -8,6 +8,7 @@ export default function Template({ data }) {
   const {
     title,
     tags,
+    date,
   } = post.frontmatter;
 
   const {
@@ -22,11 +23,13 @@ export default function Template({ data }) {
         <article className="post__article">
           <header className="post__article__header">
             <h2 className="post__title">{title}</h2>
+            <i className="post__article__date">{date}</i>
           </header>
+
           <ul className="post__tags">
-            {tags && (
-              <li>{tags}</li>
-            )}
+            {tags &&
+              tags.map((tag, i) => <li key={i}>{tag}</li>)
+            }
           </ul>
           <div
             className="post__article__content"
@@ -74,7 +77,7 @@ export const query = graphql`
         title
         path
         tags
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MM.DD. YYYY")
       }
       html
     }

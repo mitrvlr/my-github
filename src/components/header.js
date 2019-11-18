@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 
 // import Nav from './nav';
 
-const Header = ({ siteTitle, siteDescription, siteAuthor, tags}) => {
+const Header = ({ siteTitle, siteDescription, siteAuthor }) => {
   return (
     <>
       {/*<input type="checkbox" id="toggle-nav" className="nav__toggle a11y" />*/}
@@ -17,8 +17,7 @@ const Header = ({ siteTitle, siteDescription, siteAuthor, tags}) => {
                 to="/"
                 className="header__link"
               >
-                {siteTitle}
-                <em className="header__desc"> {siteDescription}</em>
+                {siteTitle} <em className="header__desc">| {siteDescription}</em>
               </Link>
             </h1>
 
@@ -39,10 +38,10 @@ const Header = ({ siteTitle, siteDescription, siteAuthor, tags}) => {
               <span className="github">{siteAuthor}</span>
             </a>
           </div>
-
-          <div className="header__utils">
-            1212
-          </div>
+          {/*<div className="header__utils">*/}
+          {/*  <a href="https://www.facebook.com/profile.php?id=100012922477281" target="_blank" rel="noopener noreferrer">F</a>*/}
+          {/*  <a href="https://twitter.com/mitrvlr" target="_blank" rel="noopener noreferrer">T</a>*/}
+          {/*</div>*/}
 
         </div>
         {/*<Nav tags={tags} />*/}

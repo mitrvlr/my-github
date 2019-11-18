@@ -15,16 +15,16 @@
   }
   &__tags {
     margin-top: 2rem;
-    margin-left: -.2rem;
-    margin-right: -.2rem;
+    margin-left: -.3rem;
+    margin-right: -.3rem;
     font-size: font(footnote);
 
     li {
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      margin-left: .2rem;
-      margin-right: .2rem;
+      margin-left: .3rem;
+      margin-right: .3rem;
       padding: .2rem .6rem;
       border-radius: .2rem;
       background-color: color(info);
@@ -32,7 +32,6 @@
       text-transform: capitalize;
     }
   }
-
   &__date {
     display: block;
     font-size: font(topic);
@@ -85,9 +84,8 @@
   &__desc {
     position: relative;
     @include ellipsis(2);
-    padding-top: 1.6rem;
-    border-top: .1rem solid color(veiled);
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+    padding-top: 2rem;
     max-height: 5.5rem;
     font-size: font(contents);
     letter-spacing: -.08rem;
@@ -109,15 +107,16 @@
 
     &:after {
       @include transition($prop: transform, $time: $dur*2);
+      top: 0;
       z-index: z(default);
-      background-color: color(backgorund);
+      border-radius: .4rem;
+      background-color: color(info);
       transform: scaleX(0);
       transform-origin: center right;
     }
 
     .post__section__block:hover &,
     .post__section__block:focus & {
-
       &:after {
         transform: scaleX(1);
         transform-origin: center left;
@@ -146,6 +145,13 @@
     margin-right: -3rem;
     padding: 3rem 3rem;
     color: color(white);
+  }
+  
+  &__date {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: .4rem;
+    font-style: normal;
   }
 
   &__content {
@@ -196,7 +202,7 @@
       &:before {
         content: '';
         @include full-layer();
-        z-index: z(modal);
+        z-index: z(floor);
       }
     }
   }

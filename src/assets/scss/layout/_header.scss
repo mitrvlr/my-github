@@ -10,7 +10,7 @@
   }
 
   &__desc {
-    margin-left: .8rem;
+    margin-left: .4rem;
     font-size: font(contents);
   }
 
@@ -19,10 +19,40 @@
     align-items: baseline;
   }
 
+  &__utils {
+    @include backdrop(0);
+    @include transition();
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-top: 1.2rem;
+    padding: .6rem 1.2rem;
+    font-size: font(abstract);
+    border-radius: .4rem;
+    color: color(white);
+  }
+
   &__author {
     position: relative;
     display: flex;
     align-items: center;
+    font-family: 'Cookie', cursive;
+
+    .octicon {
+      display: inline-flex;
+      margin-left: 1.2rem;
+      margin-right: 1.2rem;
+
+      path {
+        @include transition();
+        fill: color(info);
+
+        .header__author:focus &,
+        .header__author:hover & {
+          fill: color(primary);
+        }
+      }
+    }
 
     .github {
       display: none;
@@ -33,7 +63,7 @@
       padding: .4rem .6rem;
       font-size: font(footnote);
       border-radius: .4rem;
-      background-color: color(info);
+      background-color: color(primary);
       color: color(white);
       transform: translate3d(-50%, 0, 0) rotate(-90deg);
       transform-origin: center -2.1rem;
@@ -49,13 +79,18 @@
         height: 0;
         border-style: solid;
         border-width: 0 .4rem .6rem .4rem;
-        border-color: transparent transparent color(info) transparent;
+        border-color: transparent transparent color(primary) transparent;
         transform: translate(-50%, -100%);
       }
     }
 
     &:focus,
     &:hover {
+      .octicon {
+        path {
+          fill: color(primary);
+        }
+      }
       .github {
         transform: translate3d(-50%, 0, 0) rotate(0deg);
         opacity: 1;
@@ -63,46 +98,7 @@
     }
   }
 
-  &__octicon {
-    display: inline-flex;
 
-    path {
-      @include transition();
-      fill: color(info);
-
-      .header__author:focus &,
-      .header__author:hover & {
-        fill: color(primary);
-      }
-    }
-  }
-
-  &__buy-me-a-coffee {
-    @include backdrop(0);
-    @include transition();
-    box-sizing: border-box;
-    display: inline-flex;
-    align-items: center;
-    margin-top: .8rem;
-    padding: .6rem 1.2rem;
-    font-size: font(abstract);
-    font-family: 'Cookie', cursive;
-    letter-spacing: .08rem;
-    text-decoration: none;
-    border-radius: .4rem;
-    color: color(white);
-
-    &__txt {
-      margin-left: .8rem;
-    }
-
-    &:hover,
-    &:active,
-    &:focus {
-      opacity: 0.85;
-    }
-  }
-  
   @include mq(large) {
     &__author {
 

@@ -3,7 +3,6 @@ module.exports = {
     title: `DDD`,
     description: `daily dev diary`,
     author: `@mitrvlr`,
-    og: `src/assets/images/open-graph.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

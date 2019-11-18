@@ -8,7 +8,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+
 import { useStaticQuery, graphql } from 'gatsby';
+
+import og from '../assets/images/open-graph.png';
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -19,7 +22,6 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
-            og
           }
         }
       }
@@ -50,7 +52,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: site.siteMetadata.og,
+          content: og,
         },
         {
           property: `og:type`,

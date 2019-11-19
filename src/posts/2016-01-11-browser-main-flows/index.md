@@ -6,16 +6,16 @@ tags: ['front-end']
 ---
 
 ![d2-campus-seminar-27-1024](https://cloud.githubusercontent.com/assets/24470477/23196751/f09dbf7c-f8fe-11e6-80ec-5e6b6f5b0204.jpg)
-{:.tac}
+
 
 출처: [[D2 campus seminar]](http://www.slideshare.net/deview/d2-campus-seminar-45209057)
-{:.tac}
+
 
 ![png 3bbase6494b952da1044d948](https://cloud.githubusercontent.com/assets/24470477/23196755/f4c75d42-f8fe-11e6-865e-f25d94283ed9.png)
-{:.tac}
+
 
 출처: [[www.chromium.org]](https://www.chromium.org/developers/design-documents/gpu-accelerated-compositing-in-chrome)
-{:.tac}
+
 
 ### 크롬 브라우저의 웹 페이지 렌더링 처리 과정
 

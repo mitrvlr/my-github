@@ -17,43 +17,47 @@ caniuse (support srcset attribute)
 ### Resolution
 
 동일한 사이즈로 다양한 해상도 지원이 가능하게 사용할 수 있으며 두번재 인자 값으로 (ratio)x 작성 할 수 있다.
+```html
+<img 
+    src="https://image-1x.png" 
+    srcset="
+            https://image-1x.png 1x, 
+            https://image-2x.png 2x,
+            https://image-3x.png 3x"
+    alt=""
+>
+```
 
-    <img 
-    	src="https://image-1x.png" 
-    	srcset="
-    			https://image-1x.png 1x, 
-    			https://image-2x.png 2x,
-    			https://image-3x.png 3x"
-    	alt=""
-    >
 
 ### Responsive
 
 또는 `size` 속성을 사용하여 breakpoint 에 따라 최적화된 이미지를 사용할 수 있다.
 
 `size` 의 조건은 참이 실행되면 이하 조건을 무시하고 마지막에 조건이 없는 경우는 모든 조건이 참이 아닐 경우 실행된다.
-
-    <img 
-    	src="https://image-320w.png" 
-    	srcset="
-    			https://image-320w.png 320w, 
-    			https://image-480w.png 480w,
-    			https://image-720w.png 720w"
-      sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             680px"
-    	alt=""
-    >
+```html
+<img 
+    src="https://image-320w.png" 
+    srcset="
+            https://image-320w.png 320w, 
+            https://image-480w.png 480w,
+            https://image-720w.png 720w"
+  sizes="(max-width: 320px) 280px,
+         (max-width: 480px) 440px,
+         680px"
+    alt=""
+>
+```
 
 ### Art direction
 
 아트 디렉션 문제(이미지의 서로 다른 해상도로 인해 의도와 다른 연출이 될때)는 서로 다른 환경의 디스플레이에서 의도한 연출 방향의 이미지로 변경할 수도 있다.
-
-    <picture>
-      <source media="(max-width: 959px)" srcset="image-960w-portrait.jpg">
-      <source media="(min-width: 960px)" srcset="image-960w-landscape.jpg">
-      <img src="image-960w-landscape.jpg" alt="">
-    </picture>
+```html
+<picture>
+  <source media="(max-width: 959px)" srcset="image-960w-portrait.jpg">
+  <source media="(min-width: 960px)" srcset="image-960w-landscape.jpg">
+  <img src="image-960w-landscape.jpg" alt="">
+</picture>
+```
 
 그리고 브라우저는 다음과 같이 `srcset` 을 해석한다.
 
@@ -67,12 +71,13 @@ caniuse (support srcset attribute)
 위의 예제로 예상이 가능하듯 HTTP 요청은 조건에 해당하는 경우 실행된다.
 
 다음의 [예제](https://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/responsive.html) 코드는 이미지를 다음과 같이 요청한다.
-
-    <picture>
-      <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg">
-      <source media="(min-width: 800px)" srcset="elva-800w.jpg">
-      <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
-    </picture>
+```html
+<picture>
+  <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg">
+  <source media="(min-width: 800px)" srcset="elva-800w.jpg">
+  <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+</picture>
+```
 
 ![responsive-images http request before](responsive-images_before.png)
 
@@ -89,8 +94,6 @@ caniuse (support srcset attribute)
 레스터 이미지의 다양한 환경에서 픽셀화 현상을 대응하기 위하여 사용한다.
 
 그렇다면 픽셀화 걱정이 없는 벡터 그래픽인 `svg` 와 비교했을때는 어떨까?
-
-[](https://www.notion.so/2437299b11b34bc194b89dd302172854#b6c2a5c9e80140018d37853107b3783b)
 
 [vecta.io](http://vecta.io) 에 게재된 svg vs srcset
 

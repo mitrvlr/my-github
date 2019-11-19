@@ -18,7 +18,7 @@ tags: ['front-end','css']
 ![screenshot](https://cloud.githubusercontent.com/assets/24470477/23155603/ba02b0ba-f856-11e6-820d-4a22e79234f9.png)
 
 ex) font-variant: small-caps;
-{:.tac}
+
 
 ### 3. font-weight
   - value : normal (400) / bold (700) / bolder / lighter / 100 ~ 900 
@@ -39,21 +39,21 @@ ex) font-variant: small-caps;
 ![screenshot_ 1](https://cloud.githubusercontent.com/assets/24470477/23155618/cb47c63a-f856-11e6-93bf-3becf04cd42e.png)
 
 상대 가중치 Table (border / lighter 가 주어졌을때, 표와 같이 절대 중량을 계산한다.)
-{:.tac}
+
 
 - - -
 
 ![optimaweights](https://cloud.githubusercontent.com/assets/24470477/23155635/d74fa4b6-f856-11e6-98eb-4d1a73536152.png)
 
 ex) Inherited value - bolder
-{:.tac}
+
 
 - - -
 
 ![hiraginoweights](https://cloud.githubusercontent.com/assets/24470477/23155644/e08910d0-f856-11e6-94e8-4819563423e9.png)
 
 ex) Inherited value - lighter
-{:.tac}
+
 
 - - -
 
@@ -64,7 +64,7 @@ ex) Inherited value - lighter
 ![universwidths](https://cloud.githubusercontent.com/assets/24470477/23155660/ef761c96-f856-11e6-8845-be047b352c75.png)
 
 ex) font-stretch attribute
-{:.tac}
+
 
 ### 5. font-size
   - value : `<absolute-size>` / `<relative-size>` / `<length>` / `<percentage>`
@@ -88,21 +88,21 @@ ex) font-stretch attribute
 ![screenshot4](https://cloud.githubusercontent.com/assets/24470477/23155708/2240e610-f857-11e6-8a4d-cdcb008866a7.png)
 
 ex) absolute-size
-{:.tac}
+
 
 ```css
-	p { font-size: 12pt; }
-	blockquote { font-size:'larger'; }
-	em { font-size: 150% }
-	em { font-size: 1.5em }
+p { font-size: 12pt; }
+blockquote { font-size:'larger'; }
+em { font-size: 150% }
+em { font-size: 1.5em }
 ```
 
 ### 8. line-height
 - value : normal / `<number>` / `<length>` / `<percentage>` / inherit
 ```css
-	div { line-height: 1.2; font-size: 10pt }	// number
-	div { line-height: 1.2em; font-size: 10pt }	// length
-	div { line-height: 120%; font-size: 10pt }	// percentage
+div { line-height: 1.2; font-size: 10pt }	// number
+div { line-height: 1.2em; font-size: 10pt }	// length
+div { line-height: 120%; font-size: 10pt }	// percentage
 ```
 
 ### 9. font-family

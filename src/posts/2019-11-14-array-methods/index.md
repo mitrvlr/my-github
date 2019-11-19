@@ -20,30 +20,31 @@ tags: ['javascript']
 - 실행하면 중간에 멈출 수 없다.
 - 삭제했거나 초기화하지 않은 인덱스 속성에 대해서는 실행하지 않음
 - thisArg 를 전달하면 callback 은 전달받은 this의 값을 자신의 this 값으로 사용할 수 있다
+```javascript
+const arr = [];
 
-    const arr = [];
-    
-    arr.forEach(callback[, thisArg]);
+arr.forEach(callback[, thisArg]);
 
-    [2, 5, , 9].forEach(function(element, index, array) {
-      console.log('a[' + index + '] = ' + element);
-    });
-    
-    // a[0] = 2
-    // a[1] = 5
-    // a[3] = 9
+[2, 5, , 9].forEach(function(element, index, array) {
+  console.log('a[' + index + '] = ' + element);
+});
 
-    function Counter() {
-      this.sum = 0;
-      this.count = 0;
-    }
-    
-    Counter.prototype.add = function(array) {
-      array.forEach(function(entry) {
-        this.sum += entry;
-        ++this.count;
-      }, this);
-    };
+// a[0] = 2
+// a[1] = 5
+// a[3] = 9
+
+function Counter() {
+  this.sum = 0;
+  this.count = 0;
+}
+
+Counter.prototype.add = function(array) {
+  array.forEach(function(entry) {
+    this.sum += entry;
+    ++this.count;
+  }, this);
+};
+```
 
 ## `map()`
 

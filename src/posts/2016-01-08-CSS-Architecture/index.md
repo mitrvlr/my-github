@@ -6,7 +6,7 @@ tags: ['front-end','css']
 ---
 
 ![book-covers](https://cloud.githubusercontent.com/assets/24470477/23197921/008b44ce-f907-11e6-81b5-1a69131fc1e9.png)
-{:.tac}
+
 
 ### * SMACSS _(Scalable & Modular Architecture for CSS)_
 SMACSS는 CSS를 5가지로 분류/범주화하여 작명규칙 등 스타일 가이드를 제시한 방법론이다.
@@ -29,19 +29,19 @@ SMACSS는 CSS를 5가지로 분류/범주화하여 작명규칙 등 스타일 �
 ### * OOCSS _(Object Oriented CSS)_
 OOCSS는 2가지 범주 내에서 독립적인 요소로 추상화할 수 있는 반복패턴을 정의하여 사용하자는 객체 지향 스타일 가이드를 제시한 방법론이다.
 
-  - 표현과 구조의 분리 _(Separate structure and skin)_ : CSS를 Positioning / Styling으로 객체화하여 Mix & Match 
+- 표현과 구조의 분리 _(Separate structure and skin)_ : CSS를 Positioning / Styling으로 객체화하여 Mix & Match 
   
-  ```css
-    .position {
-      position: relative;
-      display: block;
-      float: none;
-    }
-    .style {
-      background: transparent;
-      border: none; 
-    }
-  ```
+```css
+.position {
+  position: relative;
+  display: block;
+  float: none;
+}
+.style {
+  background: transparent;
+  border: none; 
+}
+```
   - 컨테이너와 콘텐츠의 분리 _(Separate container and content)_ : DOM 위치에 의존하지 않고 객체의 재사용이 가능한 클래스 기반 모듈 구축
   - *장점* : 코드의 재사용성이 높아진다.
   - *단점*
@@ -58,24 +58,24 @@ OOCSS를 토대로 Sass에 적용하는 방법론<br>
 
   - *Block* : 문단 전체에 적용된 엘리먼트, 또는 엘리먼트를 담고 있는 컨테이너를 말함
   
-  ```css
-    .block-name {
-      //
-    }
-  ```
-  - *Element* : Block 안에서 특정기능을 수행하는 컴포넌트
-  
-  ```css
-    .block-name__element-name{
-      //
-    }
-  ```
-  - *Modifier* : Block, Element의 외관/상태를 변화시킨다.
-  
-  ```css
-    .block-name__element-name--modifier {
-      //
-    }
+```css
+.block-name {
+  //
+}
+```
+- *Element* : Block 안에서 특정기능을 수행하는 컴포넌트
+
+```css
+.block-name__element-name{
+  //
+}
+```
+- *Modifier* : Block, Element의 외관/상태를 변화시킨다.
+
+```css
+.block-name__element-name--modifier {
+  //
+}
   ```
   - *장점* : 의미있는 클래스 이름의 작명이 가능하다.
   - *단점* : 클래스 이름이 길어진다.

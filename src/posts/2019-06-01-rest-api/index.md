@@ -71,7 +71,7 @@ tags: ['front-end']
 ### hypermedia as the engine of application state (HATEOAS)
 
 - Application의 상태는 Hyperlink를 이용해 전이되어야한다
-    - HTML의 <a> Hyperlink를 사용
+    - HTML의 `<a>` Hyperlink를 사용
     - HTTP HEAD의 Link 명세 사용
 - Uniform Interface
     - 독립적 진화
@@ -115,7 +115,7 @@ tags: ['front-end']
 
 - Hyperlink : 됨 (a tag 등)
 - Self-descriptive : 됨 (HTML 명세)
-
+```json
     GET /todos HTTP/1.1
     Host: example.org
     
@@ -128,6 +128,7 @@ tags: ['front-end']
            <a href=“http://todos/2”>집에에에 가기</a>
        </body>
     </html>
+```
 
 ### Self-descriptive
 
@@ -149,7 +150,7 @@ tags: ['front-end']
 
 - Hyperlink : 정의되어있지 않음
 - Self-descriptive : 불완전
-
+```json
     GET /todos HTTP/1.1
     HOst: example.org
     
@@ -160,7 +161,7 @@ tags: ['front-end']
       {“id”: 1, “title”: “회사 가기”},
       {“id”: 2, “title”: “집에 가기”}
     ]
-
+```
 ## 정리
 
 - 오늘날 대부분의 'REST API'는 사실 REST를 따르지 않고 있다.

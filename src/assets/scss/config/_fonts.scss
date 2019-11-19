@@ -21,7 +21,7 @@ $font-scheme: (
   root: 1rem,
 );
 
-$font-base: 'IropkeBatang', sans-serif;
+$font-base: 'IropkeBatang', 'Apple SD Gothic Neo', sans-serif;
 
 // generate font-face
 @mixin font-face($filename, $family, $weight: 400) {

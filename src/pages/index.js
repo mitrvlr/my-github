@@ -4,8 +4,6 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-import '../assets/scss/style.scss';
-
 const IndexPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
 

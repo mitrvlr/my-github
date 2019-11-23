@@ -1,7 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
+
 import Layout from '../components/layout';
+import { Utterences } from '../components/utterences';
 
 export default function Template({ data }) {
   const { markdownRemark: post, site: meta } = data;
@@ -13,8 +15,11 @@ export default function Template({ data }) {
 
   const {
     title: metaTitle,
-    description
+    description,
+    comment
   } = meta.siteMetadata;
+
+  const { utterances } = comment;
 
   return (
     <Layout>
@@ -65,6 +70,8 @@ export default function Template({ data }) {
           </svg>
           <span className="post__article__addon__txt">Was it useful?</span>
         </a>
+
+        {!!utterances && <Utterences repo={utterances} />}
       </div>
     </Layout>
   );
@@ -85,6 +92,9 @@ export const query = graphql`
       siteMetadata {
         title
         description
+        comment {
+          utterances
+        }
       }
     }
   }

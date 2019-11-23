@@ -3,6 +3,9 @@ module.exports = {
     title: `DDD`,
     description: `daily dev diary`,
     author: `@mitrvlr`,
+    comment: {
+      utterances: 'mitrvlr/commnet',
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

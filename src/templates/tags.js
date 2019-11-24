@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
 
 // Components
 import { Link, graphql } from 'gatsby';
@@ -9,9 +10,13 @@ import Layout from '../components/layout';
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext;
   const { edges, totalCount } = data.allMarkdownRemark;
+  const {
+    title,
+  } = data.site.siteMetadata;
 
   return (
     <Layout>
+      <Helmet title={`${title} | ${tag.toLocaleUpperCase()}`} />
       <div className="layout__row">
         <div className="post__panel">
           <mark className="post__panel__mark">{tag}</mark> 로 작성된 <em>{totalCount}개</em>의 글
@@ -64,6 +69,11 @@ export default Tags;
 
 export const pageQuery = graphql`
   query($tag: String) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }

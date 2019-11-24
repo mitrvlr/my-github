@@ -1,6 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
+
+import kebabCase from 'lodash/kebabCase';
 
 import Layout from '../components/layout';
 import { Utterences } from '../components/utterences';
@@ -33,7 +35,7 @@ export default function Template({ data }) {
 
           <ul className="post__tags">
             {tags &&
-              tags.map((tag, i) => <li key={i}>{tag}</li>)
+              tags.map((tag, i) => <li key={i}><Link to={`/tags/${kebabCase(tag)}/`} className="tag">{tag}</Link></li>)
             }
           </ul>
           <div

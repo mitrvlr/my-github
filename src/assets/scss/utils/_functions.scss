@@ -31,11 +31,11 @@
 }
 
 // lightness
-@function midnight($color, $amount) {
+@function daybreak($color, $amount) {
   @return mix(color(white), $color, $amount);
 }
 
 // darkness
-@function daybreak($color, $amount) {
+@function midnight($color, $amount) {
   @return mix(color(black), $color, $amount);
 }

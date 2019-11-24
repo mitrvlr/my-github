@@ -2,7 +2,7 @@
 path: '/posts/javascript-synchronous-asynchronous'
 date: 2019-07-04
 title: 'Javascript 동기와 비동기'
-tags: ['front end', 'javascript']
+tags: ['front-end', 'javascript']
 ---
 
 # JavaScript 동기/비동기

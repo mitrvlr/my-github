@@ -4,29 +4,36 @@ import PropTypes from 'prop-types';
 // Components
 import { Link, graphql } from 'gatsby';
 
+import Layout from '../components/layout';
+
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext;
   const { edges, totalCount } = data.allMarkdownRemark;
-  const tagHeader = `${totalCount} post${
-    totalCount === 1 ? '' : 's'
-  } tagged with "${tag}"`;
 
   return (
-    <div>
-      <h1>{tagHeader}</h1>
-      <ul>
+    <Layout>
+      <div className="layout__row">
+        <div className="post__panel">
+          <mark className="post__panel__mark">{tag}</mark> 로 작성된 <em>{totalCount}개</em>의 글
+        </div>
+
+        <article className="post__articles">
         {edges.map(({ node }) => {
           const { slug } = node.fields;
-          const { title } = node.frontmatter;
+          const { title, path, date } = node.frontmatter;
+
           return (
-            <li key={slug}>
-              <Link to={slug}>{title}</Link>
-            </li>
+            <section className="post__section" key={slug}>
+              <Link to={path} className="post__section__block">
+                <i className="post__date">{date}</i>
+                <h2 className="post__title">{title}</h2>
+              </Link>
+            </section>
           );
         })}
-      </ul>
-      <Link to="/tags">All tags</Link>
-    </div>
+        </article>
+      </div>
+    </Layout>
   );
 };
 
@@ -65,11 +72,14 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
+          excerpt(pruneLength: 250)
           fields {
             slug
           }
           frontmatter {
             title
+            date(formatString: "MM.DD")
+            path
           }
         }
       }

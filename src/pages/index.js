@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
               <p className="post__section__desc">{post.excerpt}</p>
 
               {post.frontmatter.tags && (<ul className="post__tags">
-                {post.frontmatter.tags.map((tag, idx) => ( <li key={idx}> {tag} </li>))}
+                {post.frontmatter.tags.map((tag, idx) => ( <li key={idx} className="tag"> {tag} </li>))}
               </ul>)}
             </Link>
           </section>

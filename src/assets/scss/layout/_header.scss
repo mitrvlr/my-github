@@ -32,7 +32,7 @@
     }
   }
 
-  &__utils {
+  &__block {
     @include backdrop(0);
     @include transition();
     box-sizing: border-box;
@@ -42,7 +42,28 @@
     padding: 1.2rem 2.6rem;
     font-size: font(abstract);
     border-radius: .4rem;
-    color: color(white);
+
+    &__link {
+      position: relative;
+      margin-right: .8rem;
+      padding-right: 1rem;
+      color: color(white);
+
+      &:last-child:after {
+        display: none;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: .1rem;
+        height: 1.2rem;
+        background-color: color(white);
+        transform: translateY(-50%);
+      }
+    }
   }
 
   &__author {

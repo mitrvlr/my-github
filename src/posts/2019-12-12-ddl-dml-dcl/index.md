@@ -1,8 +1,8 @@
 ---
 path: '/posts/ddl-dml-dcl'
-date: 2019-12-03
+date: 2019-12-12
 title: 'DDL DML DCL'
-tags: ['sql']
+tags: ['software engineering', 'sql']
 ---
 
 ## 데이터 정의 언어 (Data Definition Language)

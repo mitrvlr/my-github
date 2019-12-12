@@ -2,7 +2,7 @@
 path: '/posts/mysql'
 date: 2019-12-03
 title: 'MySQL'
-tags: ['software engineering', 'mysql']
+tags: ['software engineering', 'sql']
 ---
 
 # 데이터베이스

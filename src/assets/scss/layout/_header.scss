@@ -6,18 +6,18 @@
   padding-bottom: 1.5rem;
 
   &__title {
-    font-size: font(title);
+    font-size: $f-title;
     letter-spacing: .08rem;
   }
 
   &__desc {
     @include transition();
     margin-left: .5rem;
-    font-size: font(contents);
+    font-size: $f-contents;
 
     .header__link:hover &,
     .header__link:focus & {
-      color: color(info);
+      color: $c-info;
     }
   }
 
@@ -28,11 +28,11 @@
 
     &:hover,
     &:focus {
-      color: color(primary);
+      color: $c-primary;
     }
   }
 
-  &__utils {
+  &__block {
     @include backdrop(0);
     @include transition();
     box-sizing: border-box;
@@ -40,43 +40,63 @@
     align-items: center;
     margin-top: 1.2rem;
     padding: 1.2rem 2.6rem;
-    font-size: font(abstract);
+    font-size: $f-abstract;
     border-radius: .4rem;
-    color: color(white);
+
+    &__link {
+      position: relative;
+      margin-right: .8rem;
+      padding-right: 1rem;
+      color: $c-white;
+
+      &:last-child:after {
+        display: none;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: .1rem;
+        height: 1.2rem;
+        background-color: $c-white;
+        transform: translateY(-50%);
+      }
+    }
   }
 
   &__author {
     position: relative;
-    z-index: z(floor);
+    z-index: $z-floor;
     display: flex;
     align-items: center;
-    font-family: cursive;
 
     .octicon {
       display: inline-flex;
 
       path {
         @include transition();
-        fill: color(info);
+        fill: $c-info;
 
         .header__author:focus &,
         .header__author:hover & {
-          fill: color(primary);
+          fill: $c-primary;
         }
       }
     }
 
     .github {
       display: none;
-      @include transition($time: $dur*2, $func: cubic-bezier(0.680, -0.550, 0.265, 1.550));
+      @include transition($time: $ease-dur*2, $func: cubic-bezier(0.680, -0.550, 0.265, 1.550));
       position: absolute;
       top: 100%;
       left: 50%;
       padding: .4rem .6rem;
-      font-size: font(footnote);
+      font-size: $f-footnote;
       border-radius: .4rem;
-      background-color: color(primary);
-      color: color(white);
+      background-color: $c-primary;
+      color: $c-white;
       transform: translate3d(-50%, 0, 0) rotate(-90deg);
       transform-origin: center -2.1rem;
       opacity: 0;
@@ -91,7 +111,7 @@
         height: 0;
         border-style: solid;
         border-width: 0 .4rem .6rem .4rem;
-        border-color: transparent transparent color(primary) transparent;
+        border-color: transparent transparent $c-primary transparent;
         transform: translate(-50%, -100%);
       }
     }
@@ -100,7 +120,7 @@
     &:hover {
       .octicon {
         path {
-          fill: color(primary);
+          fill: $c-primary;
         }
       }
       .github {

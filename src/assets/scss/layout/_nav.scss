@@ -13,7 +13,7 @@
       padding-bottom: .8rem;
 
       & ~ li {
-        border-top: .1rem solid color(edge);
+        border-top: .1rem solid $c-edge;
       }
     }
 
@@ -21,14 +21,14 @@
       @include transition();
       display: block;
       padding: 1.2rem 1.2rem;
-      font-size: font(footnote);
+      font-size: $f-footnote;
       text-transform: capitalize;
       border-radius: .6rem;
 
       &:hover,
       &:focus {
-        background-color: color(primary);
-        color: color(white);
+        background-color: $c-primary;
+        color: $c-white;
       }
     }
   }

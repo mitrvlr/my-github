@@ -115,7 +115,7 @@ Structured Query Language
 
 ### 구성요소
 
-[](https://www.notion.so/eb5fae49130a4c11ba76c79fdbbcf019#5b73ce665d6c4ab9ba2abc017497a9f1)
+![database](./database.png)
 
 - 저장-데이터베이스
 - 메타-데이터베이스

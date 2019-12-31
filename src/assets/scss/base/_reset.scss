@@ -4,7 +4,6 @@
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
 html,
@@ -141,24 +140,24 @@ textarea,
 select,
 button {
   font-family: $font-base;
-  color: color(body);
+  color: $c-body;
 
 }
 
 body {
   @include break-word;
   min-width: 320px;
-  background-color: color(surface);
+  background-color: $c-surface;
 }
 
 em,
 mark {
   background-color: transparent;
-  color: color(primary);
+  color: $c-primary;
 }
 
 a {
-  color: color(body);
+  color: $c-body;
   text-decoration: none;
 }
 
@@ -166,19 +165,19 @@ hr {
   margin: 1.6rem 0;
   border-width: 1px 0 0 0;
   border-style: solid;
-  border-color: color(hint);
+  border-color: $c-hint;
 }
 
 ::selection {
-  background: color(primary);
-  color: color(white);
+  background: $c-primary;
+  color: $c-white;
   text-shadow: none;
 }
 
 ::-webkit-input-placeholder,
 ::-ms-input-placeholder,
 :-moz-placeholder {
-  color: color(hint);
+  color: $c-hint;
   font-size: 1.2rem;
 }
 

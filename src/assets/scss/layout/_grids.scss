@@ -1,0 +1,14 @@
+/*
+* grid
+*/
+.grid {
+  &--small {
+    @include grid($g-small);
+  }
+  &--medium {
+    @include grid($g-medium);
+  }
+  &--large {
+    @include grid($g-large);
+  }
+}

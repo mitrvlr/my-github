@@ -1,41 +1,12 @@
 /*
 * Function
 */
-
-@function font($font) {
-  @if map-has-key($font-scheme, $font) {
-    @return map-get($font-scheme, $font);
-  }
-  @return null;
-}
-
-@function color($color) {
-  @if map-has-key($color-scheme, $color) {
-    @return map-get($color-scheme, $color);
-  }
-  @return null;
-}
-
-@function layout($size) {
-  @if map-has-key($layouts, $size) {
-    @return map-get($layouts, $size);
-  }
-  @return null;
-}
-
-@function z($layer) {
-  @if map-has-key($z-indexes, $layer) {
-    @return map-get($z-indexes, $layer);
-  }
-  @return null;
-}
-
 // lightness
-@function midnight($color, $amount) {
-  @return mix(color(white), $color, $amount);
+@function daybreak($color, $amount) {
+  @return mix($c-white, $color, $amount);
 }
 
 // darkness
-@function daybreak($color, $amount) {
-  @return mix(color(black), $color, $amount);
+@function midnight($color, $amount) {
+  @return mix($c-black, $color, $amount);
 }

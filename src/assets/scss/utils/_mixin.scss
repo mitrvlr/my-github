@@ -24,18 +24,13 @@
   clip: rect(0 0 0 0);
 }
 
-@mixin backdrop($mh: 10rem) {
-  $gradient-colors: (
-    map-get($color-pallet, orange),
-    map-get($color-pallet, pink),
-    map-get($color-pallet, purple),
-    map-get($color-pallet, indigo),
-  );
+@mixin backdrop($mh: null) {
+  $gradient-colors: ($c-primary, $c-secondary, $c-secondary, $c-primary);
 
-  min-height: $mh;
+  min-height: if($mh, $mh + rem, null);
   background: linear-gradient(-45deg, $gradient-colors);
   background-size: 400% 400%;
-  animation: placeholder-gradient $dur*86 linear infinite;
+  animation: placeholder-gradient $ease-dur*86 linear infinite;
 
   @keyframes placeholder-gradient {
     0% {
@@ -70,28 +65,30 @@
     } @else  {
       transform: translate3d(0, -50%, 0) rotate(135deg);
     }
-    
+
     @content;
   }
 }
 
-@mixin layout($size: null) {
+@mixin grid($size: null) {
   padding-left: $gutter-small;
   padding-right: $gutter-small;
-  
+
   @include mq(large) {
     margin-left: auto;
     margin-right: auto;
-    
+
     @if ($size) {
-      padding-left: percentage($gutter-large/map-get($layouts, $size));
-      padding-right: percentage($gutter-large/map-get($layouts, $size));
-      max-width: map-get($layouts, $size);
+      padding-left: percentage($gutter-large/$size);
+      padding-right: percentage($gutter-large/$size);
+      max-width: $size;
     } @else {
-      padding-left: percentage($gutter-large/map-get($layouts, default));
-      padding-right: percentage($gutter-large/map-get($layouts, default));
-      max-width: map-get($layouts, default);
+      padding-left: percentage($gutter-large/$g-);
+      padding-right: percentage($gutter-large/$g-);
+      max-width: map-get($grids, default);
     }
+
+    width: percentage(1);
   }
 }
 
@@ -101,13 +98,13 @@
   } @else {
     transition-property: all;
   }
-  
+
   @if ($time) {
     transition-duration: $time;
   } @else {
-    transition-duration: $dur;
+    transition-duration: $ease-dur;
   }
-  
+
   @if ($func) {
     transition-timing-function: $func;
   } @else {
@@ -134,14 +131,14 @@
 
 @mixin middle($child: '&-cell') {
   white-space: nowrap;
-  
+
   #{$child} {
     display: inline-block;
     vertical-align: middle;
     white-space: normal;
     @content;
   }
-  
+
   &:after {
     content: '';
     display: inline-block;

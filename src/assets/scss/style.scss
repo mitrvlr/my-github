@@ -2,8 +2,7 @@
 
 // config
 @import 'config/variable';
-@import 'config/colors';
-@import 'config/fonts';
+@import 'config/vendors';
 
 // utils
 @import 'utils/mixin';
@@ -20,16 +19,17 @@
 
 // layout
 @import 'layout/article';
+@import 'layout/components';
 @import 'layout/footer';
 @import 'layout/header';
+@import 'layout/grids';
 @import 'layout/layout';
 @import 'layout/nav';
 
 // components
 @import 'components/buttons';
-@import 'components/components';
-@import 'components/grids';
 @import 'components/input';
+@import 'components/list';
 @import 'components/post';
 
 // themes

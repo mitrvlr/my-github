@@ -1,0 +1,19 @@
+/*
+* layout config
+*/
+
+// grid
+$grids: (
+  small: 48rem,
+  medium: 76rem,
+  large: 98rem,
+  huge: 112rem,
+);
+
+// z-index
+$z-indexes: (
+  space: 1001,
+  cloud: 101,
+  floor: 11,
+  default: 1,
+);

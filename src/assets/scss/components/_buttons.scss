@@ -7,18 +7,18 @@
   display: inline-block;
   vertical-align: middle;
   padding: .6rem 1.2rem;
-  border: .1rem solid color(primary);
+  border: .1rem solid $c-primary;
   min-width: 8.6rem;
   font-weight: bold;
   border-radius: .4rem;
-  background-color: color(primary);
-  color: color(surface);
+  background-color: $c-primary;
+  color: $c-surface;
   text-align: center;
   @include transition();
 
   &:hover,
   &:focus {
-    border-color: midnight(color(primary), 15);
-    background-color: midnight(color(primary), 15);
+    border-color: midnight($c-primary, 15);
+    background-color: midnight($c-primary, 15);
   }
 }

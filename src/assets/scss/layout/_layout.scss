@@ -3,9 +3,8 @@
 */
 
 .layout {
-
   &__row {
-    @include layout(medium);
+    @include grid($g-medium);
   }
 
   &__flex {

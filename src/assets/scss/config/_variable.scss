@@ -2,41 +2,60 @@
 * global variables
 */
 
-// override sass-mq breakpoints
-$mq-breakpoints: (
-  x-small: 400px,
-  small: 560px,
-  medium: 720px,
-  large: 960px,
-  huge: 1280px,
-  x-large: 1600px,
-);
+@import "colors";
+@import "layout";
+@import "fonts";
 
-// layout
-$layouts: (
-  small: 48rem,
-  medium: 76rem,
-  default: 98rem,
-  large: 112rem,
-);
+// grids
+$g-small: map-get($grids, small);
+$g-medium: map-get($grids, medium);
+$g-large: map-get($grids, large);
+$g-huge: map-get($grids, huge);
+
+// z-index
+$z-space: map-get($z-indexes, space);
+$z-cloud: map-get($z-indexes, cloud);
+$z-floor: map-get($z-indexes, floor);
+$z-default: map-get($z-indexes, default);
 
 $gutter-small: 1.5rem;
 $gutter-large: 3rem;
 
-$header-h: 6.2rem;
-$header-w: 22rem;
+$header-h: 5rem;
+$header-w: 5rem;
 
-$z-indexes: (
-  space: 1001,
-  cloud: 101,
-  floor: 11,
-  default: 1,
-);
+// typography
+$f-headline: map-get($font-scheme, headline);
+$f-notice: map-get($font-scheme, notice);
+$f-title: map-get($font-scheme, title);
+$f-topic: map-get($font-scheme, topic);
+$f-abstract: map-get($font-scheme, abstract);
+$f-contents: map-get($font-scheme, contents);
+$f-footnote: map-get($font-scheme, footnote);
+
+$font-base: 'BinggraeMelona', 'Apple SD Gothic Neo', sans-serif;
+
+// colors
+$c-primary: map-get($color-pallet, indigo);
+$c-secondary: map-get($color-pallet, purple);
+$c-info: map-get($color-pallet, blue);
+$c-note: map-get($color-pallet, yellow);
+$c-error: map-get($color-pallet, red);
+$c-surface: map-get($color-pallet, fog);
+$c-background: map-get($color-pallet, blue-gray-d2);
+$c-body: map-get($color-pallet, grey-d3);
+$c-edge: map-get($color-pallet, grey-l2);
+$c-hint: map-get($color-pallet, grey-d1);
+$c-veiled: map-get($color-pallet, fog);
+$c-select: map-get($color-pallet, ash);
+$c-ink: map-get($color-pallet, ink);
+$c-white: map-get($color-pallet, white);
+$c-black: map-get($color-pallet, black);
 
 // transition & animation
-$dur: 0.2s;
+$ease-dur: 0.2s;
 $ease-out: ease-out;
 $ease-balance: ease-in-out;
 $ease-cb: cubic-bezier(0.645, 0.045, 0.355, 1);
 
-$ease-basic: $ease-out;
+$ease-basic: $ease-cb;

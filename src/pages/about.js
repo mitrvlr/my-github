@@ -44,9 +44,11 @@ const IndexPage = ( ) => {
               <dl>
                 <dt>
                   <em>사용 기술</em>
-                  - Node.js (express)
-                  - HTML5, CSS3, RWD
-                  - Vue, vuex, vue-router
+                  <ul>
+                    <li>- Node.js (express)</li>
+                    <li>- HTML5, CSS3, RWD</li>
+                    <li>- Vue, vuex, vue-router</li>
+                  </ul>
                 </dt>
                 <dd>패스트캠퍼스 웹 사이트 개발 2019.4 - 2020.1</dd>
                 <dd><a href="https://github.com/fastcampusgit/markup-guide" target="_blank">프론트엔드 마크업 가이드 제작</a> </dd>
@@ -60,9 +62,11 @@ const IndexPage = ( ) => {
               <dl>
                 <dt>
                   <em>사용 기술</em>
-                  - webpack, gulp, grunt
-                  - jQuery, gsap (인터랙티브 페이지 개발)
-                  - HTML5, CSS3, RWD, 웹 접근성
+                  <ul>
+                    <li>- webpack, gulp, grunt</li>
+                    <li>- jQuery, gsap (인터랙티브 페이지 개발)</li>
+                    <li>- HTML5, CSS3, RWD, 웹 접근성</li>
+                  </ul>
                 </dt>
                 <dd>헤라 브랜드 사이트 (2017)</dd>
                 <dd>CJ 문화재단 브랜드 사이트 (2017)</dd>

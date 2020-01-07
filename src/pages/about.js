@@ -20,7 +20,7 @@ const IndexPage = ( ) => {
           <h3>보유 기술</h3>
           <h4>Front-end</h4>
           <dl>
-            <dt>img</dt>
+            <dt><img src="../assets/images/stacks/html5.png" alt=""/></dt>
             <dd>HTML5</dd>
           </dl>
 

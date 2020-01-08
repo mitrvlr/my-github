@@ -1,8 +1,52 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
-// import SEO from '../components/seo';
+
+// stacks
+import html from '../assets/images/stacks/html5.png';
+import css from '../assets/images/stacks/css3.png';
+import cssAnimation from '../assets/images/stacks/cssanimation.jpg';
+import sass from '../assets/images/stacks/sass.png';
+import a11y from '../assets/images/stacks/a11y.jpg';
+import greensock from '../assets/images/stacks/greensock.png';
+
+// javascript
+import javascript from '../assets/images/stacks/javascript.jpg';
+import es6 from '../assets/images/stacks/es6.jpg';
+import babel from '../assets/images/stacks/babel.png';
+
+// framework
+import react from '../assets/images/stacks/react.png';
+import redux from '../assets/images/stacks/redux.png';
+import nextjs from '../assets/images/stacks/nextjs.png';
+import reactNative from '../assets/images/stacks/react-native.jpg';
+import styledComponents from '../assets/images/stacks/styled-components.png';
+import vue from '../assets/images/stacks/vue.png';
+
+// CI
+import netlify from '../assets/images/stacks/netlify.png';
+import elasticsearch from '../assets/images/stacks/elasticsearch.png';
+
+// database
+import mysql from '../assets/images/stacks/mysql.png';
+import iconGraphql from '../assets/images/stacks/graphql.png';
+
+// task
+import webpack from '../assets/images/stacks/webpack.png';
+import gulp from '../assets/images/stacks/gulp.png';
+import grunt from '../assets/images/stacks/grunt.png';
+
+// server
+import nodejs from '../assets/images/stacks/nodejs.png';
+import nginx from '../assets/images/stacks/nginx.png';
+import gatsby from '../assets/images/stacks/gatsby.svg';
+
+// app
+import swift from '../assets/images/stacks/swift.png';
+import swiftui from '../assets/images/stacks/swiftui.png';
+
 
 const IndexPage = ( ) => {
   return (
@@ -20,8 +64,16 @@ const IndexPage = ( ) => {
           <h3>보유 기술</h3>
           <h4>Front-end</h4>
           <dl>
-            <dt><img src="../assets/images/stacks/html5.png" alt=""/></dt>
+            <dt><img src={html} alt="html5" /></dt>
             <dd>HTML5</dd>
+            <dt><img src={css} alt="css3" /></dt>
+            <dd>CSS3</dd>
+            <dt><img src={sass} alt="sass" /></dt>
+            <dd>sass</dd>
+            <dt><img src={cssAnimation} alt="cssAnimation" /></dt>
+            <dd>CSS Animation</dd>
+            <dt><img src={a11y} alt="a11y" /></dt>
+            <dd>a11y</dd>
           </dl>
 
           <h4>Database</h4>

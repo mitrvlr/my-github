@@ -11,8 +11,6 @@ import cssAnimation from '../assets/images/stacks/cssanimation.jpg';
 import sass from '../assets/images/stacks/sass.png';
 import a11y from '../assets/images/stacks/a11y.jpg';
 import greensock from '../assets/images/stacks/greensock.png';
-
-// javascript
 import javascript from '../assets/images/stacks/javascript.jpg';
 import es6 from '../assets/images/stacks/es6.jpg';
 import babel from '../assets/images/stacks/babel.png';
@@ -25,9 +23,6 @@ import reactNative from '../assets/images/stacks/react-native.jpg';
 import styledComponents from '../assets/images/stacks/styled-components.png';
 import vue from '../assets/images/stacks/vue.png';
 
-// CI
-import netlify from '../assets/images/stacks/netlify.png';
-import elasticsearch from '../assets/images/stacks/elasticsearch.png';
 
 // database
 import mysql from '../assets/images/stacks/mysql.png';
@@ -37,6 +32,8 @@ import iconGraphql from '../assets/images/stacks/graphql.png';
 import webpack from '../assets/images/stacks/webpack.png';
 import gulp from '../assets/images/stacks/gulp.png';
 import grunt from '../assets/images/stacks/grunt.png';
+import netlify from '../assets/images/stacks/netlify.png';
+import elasticsearch from '../assets/images/stacks/elasticsearch.png';
 
 // server
 import nodejs from '../assets/images/stacks/nodejs.png';
@@ -74,18 +71,66 @@ const IndexPage = ( ) => {
             <dd>CSS Animation</dd>
             <dt><img src={a11y} alt="a11y" /></dt>
             <dd>a11y</dd>
+            <dt><img src={greensock} alt="greensock" /></dt>
+            <dd>greensock</dd>
+            <dt><img src={javascript} alt="javascript" /></dt>
+            <dd>javascript</dd>
+            <dt><img src={es6} alt="es6" /></dt>
+            <dd>es6</dd>
+            <dt><img src={babel} alt="babel" /></dt>
+            <dd>babel</dd>
+            <dt><img src={react} alt="react" /></dt>
+            <dd>react</dd>
+            <dt><img src={redux} alt="redux" /></dt>
+            <dd>redux</dd>
+            <dt><img src={nextjs} alt="nextjs" /></dt>
+            <dd>nextjs</dd>
+            <dt><img src={styledComponents} alt="styledComponents" /></dt>
+            <dd>styledComponents</dd>
+            <dt><img src={vue} alt="vue" /></dt>
+            <dd>vue</dd>
           </dl>
 
           <h4>Database</h4>
           <dl>
-            <dt>img</dt>
-            <dd>sql</dd>
+            <dt><img src={mysql} alt="mysql" /></dt>
+            <dd>mysql</dd>
+            <dt><img src={iconGraphql} alt="iconGraphql" /></dt>
+            <dd>iconGraphql</dd>
+          </dl>
+
+          <h4>Server</h4>
+          <dl>
+            <dt><img src={nodejs} alt="nodejs" /></dt>
+            <dd>nodejs</dd>
+            <dt><img src={nginx} alt="nginx" /></dt>
+            <dd>nginx</dd>
+            <dt><img src={gatsby} alt="gatsby" /></dt>
+            <dd>gatsby</dd>
+          </dl>
+
+          <h4>task</h4>
+          <dl>
+            <dt><img src={webpack} alt="webpack" /></dt>
+            <dd>webpack</dd>
+            <dt><img src={gulp} alt="gulp" /></dt>
+            <dd>gulp</dd>
+            <dt><img src={grunt} alt="grunt" /></dt>
+            <dd>grunt</dd>
+            <dt><img src={netlify} alt="netlify" /></dt>
+            <dd>netlify</dd>
+            <dt><img src={elasticsearch} alt="elasticsearch" /></dt>
+            <dd>elasticsearch</dd>
           </dl>
 
           <h4>Mobile</h4>
           <dl>
-            <dt>img</dt>
+            <dt><img src={reactNative} alt="reactNative" /></dt>
+            <dd>reactNative</dd>
+            <dt><img src={swift} alt="swift" /></dt>
             <dd>swift</dd>
+            <dt><img src={swiftui} alt="swiftui" /></dt>
+            <dd>swiftui</dd>
           </dl>
 
           <h3>경력</h3>

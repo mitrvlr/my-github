@@ -53,9 +53,9 @@ const IndexPage = ( ) => {
           <h2>전성하 <i className="job">프론트엔드</i></h2>
           <h3>소개</h3>
           <ul>
-            <li># 공유와 함께 성장하는 것을 좋아하고 좋은 개발문화에 관심이 많은 프론트엔드 개발자입니다.</li>
-            <li># 디자인 시스템에 관심이 많고 CSS를 활용하여 UI를 제어하거나 마이크로 인터랙션을 구현하는 것을 좋아합니다.</li>
-            <li># 동료와 함께 성장하고 그를 기반으로 시너지를 내어 생산성있는 팀워크를 만드는 목표가 있습니다.</li>
+            <li># 좋은 개발문화와 디자인 시스템에 관심이 많은 프론트엔드 개발자입니다.</li>
+            <li># CSS를 활용하여 UI를 제어하거나 마이크로 인터랙션을 구현하는 것을 좋아합니다.</li>
+            <li># 동료와 함께 성장하는 것을 목표로 생산성있는 팀워크를 만드는 목표가 있습니다.</li>
           </ul>
 
           <h3>보유 기술</h3>
@@ -266,7 +266,7 @@ const IndexPage = ( ) => {
                     </li>
                   </ul>
                 </dt>
-                <dd>패스트캠퍼스 웹 사이트 개발 <i className="period">(2019.4 - 2020.1)</i></dd>
+                <dd>패스트캠퍼스 웹 사이트 개발 <a href="http://fastcampus.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
                 <dd>프론트엔드 마크업 가이드 제작 <a href="https://github.com/fastcampusgit/markup-guide" target="_blank" rel="noreferrer noopener">[링크]</a> </dd>
               </dl>
             </dd>

@@ -22,6 +22,8 @@ import nextjs from '../assets/images/stacks/nextjs.png';
 import reactNative from '../assets/images/stacks/react-native.jpg';
 import styledComponents from '../assets/images/stacks/styled-components.png';
 import vue from '../assets/images/stacks/vue.png';
+import nuxtjs from '../assets/images/stacks/nuxtjs.png';
+import express from '../assets/images/stacks/express.png';
 
 // database
 import mysql from '../assets/images/stacks/mysql.png';
@@ -45,7 +47,7 @@ import swift from '../assets/images/stacks/swift.png';
 import swiftui from '../assets/images/stacks/swiftui.png';
 
 
-const IndexPage = ( ) => {
+const IndexPage = () => {
   return (
     <Layout>
       <div className="layout__row">
@@ -53,145 +55,125 @@ const IndexPage = ( ) => {
           <h2>전성하 <i className="job">프론트엔드</i></h2>
           <h3>소개</h3>
           <ul>
-            <li># 좋은 개발문화와 디자인 시스템에 관심이 많은 프론트엔드 개발자입니다.</li>
-            <li># CSS를 활용하여 UI를 제어하거나 마이크로 인터랙션을 구현하는 것을 좋아합니다.</li>
-            <li># 동료와 함께 성장하는 것을 목표로 생산성있는 팀워크를 만드는 목표가 있습니다.</li>
+            <li># 프론트엔드 개발합니다.</li>
+            <li># 좋은 개발 문화와 함께 성장하는 문화에 관심이 많아요. </li>
+            <li># 탄탄한 팀워크를 기반으로한 생산적인 팀 빌드를 목표가 있어요.</li>
           </ul>
 
           <h3>보유 기술</h3>
           <h4>Front-end</h4>
           <ul className="stack-list">
             <li>
-              <div className="stack-list__item"><img src={html} alt="html5"/></div>
+              <div className="stack-list__item"><img src={html} alt="html5" /></div>
               <strong>HTML5</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={css} alt="css3"/></div>
+              <div className="stack-list__item"><img src={css} alt="css3" /></div>
               <strong>CSS3</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={sass} alt="sass"/></div>
+              <div className="stack-list__item"><img src={sass} alt="sass" /></div>
               <strong>sass</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={cssAnimation} alt="cssAnimation"/></div>
+              <div className="stack-list__item"><img src={cssAnimation} alt="cssAnimation" /></div>
               <strong>CSS Animation</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={a11y} alt="a11y"/></div>
+              <div className="stack-list__item"><img src={a11y} alt="a11y" /></div>
               <strong>a11y</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={greensock} alt="greensock"/></div>
+              <div className="stack-list__item"><img src={greensock} alt="greensock" /></div>
               <strong>gsap</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={javascript} alt="javascript"/></div>
+              <div className="stack-list__item"><img src={javascript} alt="javascript" /></div>
               <strong>javascript</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={es6} alt="es6"/></div>
+              <div className="stack-list__item"><img src={es6} alt="es6" /></div>
               <strong>es6</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={jquery} alt="jquery"/></div>
+              <div className="stack-list__item"><img src={jquery} alt="jquery" /></div>
               <strong>jquery</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={babel} alt="babel"/></div>
+              <div className="stack-list__item"><img src={babel} alt="babel" /></div>
               <strong>babel</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={react} alt="react"/></div>
+              <div className="stack-list__item"><img src={react} alt="react" /></div>
               <strong>react</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={redux} alt="redux"/></div>
+              <div className="stack-list__item"><img src={redux} alt="redux" /></div>
               <strong>redux</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={nextjs} alt="nextjs"/></div>
+              <div className="stack-list__item"><img src={nextjs} alt="nextjs" /></div>
               <strong>nextjs</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={styledComponents} alt="styledComponents"/></div>
+              <div className="stack-list__item"><img src={styledComponents} alt="styledComponents" /></div>
               <strong>styled Components</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={vue} alt="vue"/></div>
+              <div className="stack-list__item"><img src={vue} alt="vue" /></div>
               <strong>vue</strong>
+            </li>
+            <li>
+              <div className="stack-list__item"><img src={nuxtjs} alt="nuxtjs" /></div>
+              <strong>nuxtjs</strong>
             </li>
           </ul>
 
-          <h4>Database</h4>
+          <h4>Etc.</h4>
           <ul className="stack-list">
             <li>
-              <div className="stack-list__item"><img src={mysql} alt="mysql"/></div>
+              <div className="stack-list__item"><img src={mysql} alt="mysql" /></div>
               <strong>mysql</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={iconGraphql} alt="iconGraphql"/></div>
+              <div className="stack-list__item"><img src={iconGraphql} alt="iconGraphql" /></div>
               <strong>Graphql</strong>
             </li>
-          </ul>
-
-          <h4>Server</h4>
-          <ul className="stack-list">
             <li>
-              <div className="stack-list__item"><img src={nodejs} alt="nodejs"/></div>
+              <div className="stack-list__item"><img src={nodejs} alt="nodejs" /></div>
               <strong>nodejs</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={nginx} alt="nginx"/></div>
+              <div className="stack-list__item"><img src={nginx} alt="nginx" /></div>
               <strong>nginx</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={gatsby} alt="gatsby"/></div>
+              <div className="stack-list__item"><img src={gatsby} alt="gatsby" /></div>
               <strong>gatsby</strong>
             </li>
-          </ul>
-
-          <h4>Task</h4>
-          <ul className="stack-list">
             <li>
-              <div className="stack-list__item"><img src={webpack} alt="webpack"/></div>
+              <div className="stack-list__item"><img src={webpack} alt="webpack" /></div>
               <strong>webpack</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={gulp} alt="gulp"/></div>
+              <div className="stack-list__item"><img src={gulp} alt="gulp" /></div>
               <strong>gulp</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={grunt} alt="grunt"/></div>
+              <div className="stack-list__item"><img src={grunt} alt="grunt" /></div>
               <strong>grunt</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={docker} alt="docker"/></div>
+              <div className="stack-list__item"><img src={docker} alt="docker" /></div>
               <strong>docker</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={netlify} alt="netlify"/></div>
+              <div className="stack-list__item"><img src={netlify} alt="netlify" /></div>
               <strong>netlify</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={elasticsearch} alt="elasticsearch"/></div>
-              <strong>elasticsearch</strong>
-            </li>
-          </ul>
-
-          <h4>Mobile</h4>
-          <ul className="stack-list">
-            <li>
-              <div className="stack-list__item"><img src={reactNative} alt="reactNative"/></div>
-              <strong>React Native</strong>
-            </li>
-            <li>
-              <div className="stack-list__item"><img src={swift} alt="swift"/></div>
-              <strong>swift</strong>
-            </li>
-            <li>
-              <div className="stack-list__item"><img src={swiftui} alt="swiftui"/></div>
-              <strong>swiftui</strong>
+              <div className="stack-list__item"><img src={express} alt="express" /></div>
+              <strong>express</strong>
             </li>
           </ul>
 
@@ -205,47 +187,43 @@ const IndexPage = ( ) => {
                   <em>사용 기술</em>
                   <ul className="stack-list stack-list--organization">
                     <li>
-                      <div className="stack-list__item"><img src={html} alt="html5"/></div>
+                      <div className="stack-list__item"><img src={html} alt="html5" /></div>
                       <strong>HTML5</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={css} alt="css3"/></div>
+                      <div className="stack-list__item"><img src={css} alt="css3" /></div>
                       <strong>CSS3</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={sass} alt="sass"/></div>
+                      <div className="stack-list__item"><img src={sass} alt="sass" /></div>
                       <strong>sass</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={cssAnimation} alt="cssAnimation"/></div>
+                      <div className="stack-list__item"><img src={cssAnimation} alt="cssAnimation" /></div>
                       <strong>CSS Animation</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={a11y} alt="a11y"/></div>
+                      <div className="stack-list__item"><img src={a11y} alt="a11y" /></div>
                       <strong>a11y</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={javascript} alt="javascript"/></div>
-                      <strong>javascript</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={es6} alt="es6"/></div>
+                      <div className="stack-list__item"><img src={es6} alt="es6" /></div>
                       <strong>es6</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={vue} alt="vue"/></div>
+                      <div className="stack-list__item"><img src={vue} alt="vue" /></div>
                       <strong>vue</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={react} alt="react"/></div>
+                      <div className="stack-list__item"><img src={nuxtjs} alt="nuxtjs" /></div>
+                      <strong>nuxtjs</strong>
+                    </li>
+                    <li>
+                      <div className="stack-list__item"><img src={react} alt="react" /></div>
                       <strong>react</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={redux} alt="redux"/></div>
-                      <strong>redux</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={webpack} alt="webpack"/></div>
+                      <div className="stack-list__item"><img src={webpack} alt="webpack" /></div>
                       <strong>webpack</strong>
                     </li>
                   </ul>
@@ -253,19 +231,24 @@ const IndexPage = ( ) => {
                   <em>환경</em>
                   <ul className="stack-list stack-list--organization">
                     <li>
-                      <div className="stack-list__item"><img src={docker} alt="docker"/></div>
+                      <div className="stack-list__item"><img src={docker} alt="docker" /></div>
                       <strong>docker</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={nodejs} alt="nodejs"/></div>
+                      <div className="stack-list__item"><img src={nodejs} alt="nodejs" /></div>
                       <strong>nodejs</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={nginx} alt="nginx"/></div>
+                      <div className="stack-list__item"><img src={nginx} alt="nginx" /></div>
                       <strong>nginx</strong>
+                    </li>
+                    <li>
+                      <div className="stack-list__item"><img src={express} alt="express" /></div>
+                      <strong>express</strong>
                     </li>
                   </ul>
                 </dt>
+                <dd>콜로소 웹 사이트 개발 <a href="http://coloso.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
                 <dd>패스트캠퍼스 웹 사이트 개발 <a href="http://fastcampus.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
                 <dd>프론트엔드 마크업 가이드 제작 <a href="https://github.com/fastcampusgit/markup-guide" target="_blank" rel="noreferrer noopener">[링크]</a> </dd>
               </dl>
@@ -279,43 +262,43 @@ const IndexPage = ( ) => {
                   <em>사용 기술</em>
                   <ul className="stack-list stack-list--organization">
                     <li>
-                      <div className="stack-list__item"><img src={html} alt="html5"/></div>
+                      <div className="stack-list__item"><img src={html} alt="html5" /></div>
                       <strong>HTML5</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={css} alt="css3"/></div>
+                      <div className="stack-list__item"><img src={css} alt="css3" /></div>
                       <strong>CSS3</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={sass} alt="sass"/></div>
+                      <div className="stack-list__item"><img src={sass} alt="sass" /></div>
                       <strong>sass</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={cssAnimation} alt="cssAnimation"/></div>
+                      <div className="stack-list__item"><img src={cssAnimation} alt="cssAnimation" /></div>
                       <strong>CSS Animation</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={a11y} alt="a11y"/></div>
+                      <div className="stack-list__item"><img src={a11y} alt="a11y" /></div>
                       <strong>a11y</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={greensock} alt="greensock"/></div>
+                      <div className="stack-list__item"><img src={greensock} alt="greensock" /></div>
                       <strong>gsap</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={jquery} alt="jquery"/></div>
+                      <div className="stack-list__item"><img src={jquery} alt="jquery" /></div>
                       <strong>jquery</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={webpack} alt="webpack"/></div>
+                      <div className="stack-list__item"><img src={webpack} alt="webpack" /></div>
                       <strong>webpack</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={gulp} alt="gulp"/></div>
+                      <div className="stack-list__item"><img src={gulp} alt="gulp" /></div>
                       <strong>gulp</strong>
                     </li>
                     <li>
-                      <div className="stack-list__item"><img src={grunt} alt="grunt"/></div>
+                      <div className="stack-list__item"><img src={grunt} alt="grunt" /></div>
                       <strong>grunt</strong>
                     </li>
                   </ul>

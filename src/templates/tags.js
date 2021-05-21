@@ -23,19 +23,19 @@ const Tags = ({ pageContext, data }) => {
         </div>
 
         <article className="post__articles">
-        {edges.map(({ node }) => {
-          const { slug } = node.fields;
-          const { title, path, date } = node.frontmatter;
+          {edges.map(({ node }) => {
+            const { slug } = node.fields;
+            const { title, path, date } = node.frontmatter;
 
-          return (
-            <section className="post__section" key={slug}>
-              <Link to={path} className="post__section__block">
-                <i className="post__date">{date}</i>
-                <h2 className="post__title">{title}</h2>
-              </Link>
-            </section>
-          );
-        })}
+            return (
+              <section className="post__section" key={slug}>
+                <Link to={path} className="post__section__block">
+                  <i className="post__date">{date}</i>
+                  <h2 className="post__title">{title}</h2>
+                </Link>
+              </section>
+            );
+          })}
         </article>
       </div>
     </Layout>

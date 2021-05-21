@@ -56,8 +56,8 @@ const IndexPage = () => {
           <h3>소개</h3>
           <ul>
             <li># 프론트엔드 개발합니다.</li>
-            <li># 좋은 개발 문화와 함께 성장하는 문화에 관심이 많아요. </li>
-            <li># 탄탄한 팀워크를 기반으로한 생산적인 팀 빌드를 목표가 있어요.</li>
+            <li># 좋은 개발 문화, 함께 성장하는 문화에 관심이 많습니다.</li>
+            <li># 탄탄한 팀워크를 기반으로하는 생산적인 팀 빌드를 목표가 있습니다.</li>
           </ul>
 
           <h3>보유 기술</h3>
@@ -248,8 +248,8 @@ const IndexPage = () => {
                     </li>
                   </ul>
                 </dt>
-                <dd>콜로소 웹 사이트 개발 <a href="http://coloso.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
-                <dd>패스트캠퍼스 웹 사이트 개발 <a href="http://fastcampus.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
+                <dd>콜로소 웹 개발 <a href="http://coloso.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
+                <dd>패스트캠퍼스 웹 개발 <a href="http://fastcampus.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
                 <dd>프론트엔드 마크업 가이드 제작 <a href="https://github.com/fastcampusgit/markup-guide" target="_blank" rel="noreferrer noopener">[링크]</a> </dd>
               </dl>
             </dd>
@@ -304,58 +304,58 @@ const IndexPage = () => {
                   </ul>
                 </dt>
                 <dd>
-                  헤라 브랜드 사이트 (2017) <a href="https://www.hera.com/kr/ko" target="_blank" rel="noreferrer noopener">[링크]</a>
+                  헤라 브랜드 (2017) <a href="https://www.hera.com/kr/ko" target="_blank" rel="noreferrer noopener">[링크]</a>
                 </dd>
                 <dd>
-                  CJ 문화재단 브랜드 사이트 (2017) <a href="https://www.cjazit.org/" target="_blank" rel="noreferrer noopener">[링크]</a>
+                  CJ 문화재단 브랜드 (2017) <a href="https://www.cjazit.org/" target="_blank" rel="noreferrer noopener">[링크]</a>
                 </dd>
                 <dd>
-                  J.ESTINA BEAUTY 커머스 사이트 (2017)
+                  J.ESTINA BEAUTY 커머스 (2017)
                 </dd>
                 <dd>
-                  닥터폰트 브랜드 사이트 (2016) <a href="https://github.com/fastcampusgit/markup-guide" target="_blank" rel="noreferrer noopener">[링크]</a>
+                  닥터폰트 브랜드 (2016) <a href="https://github.com/fastcampusgit/markup-guide" target="_blank" rel="noreferrer noopener">[링크]</a>
                 </dd>
                 <dd>
-                  아모레퍼시픽 그룹 브랜드 사이트 (2016) <a href="https://www.apgroup.com/int/ko/" target="_blank" rel="noreferrer noopener">[링크]</a>
+                  아모레퍼시픽 그룹 브랜드 (2016) <a href="https://www.apgroup.com/int/ko/" target="_blank" rel="noreferrer noopener">[링크]</a>
                 </dd>
                 <dd>
-                  샘표 커머스 사이트 (2016) <a href="https://www.sempio.com/" target="_blank" rel="noreferrer noopener">[링크]</a>
+                  샘표 커머스 (2016) <a href="https://www.sempio.com/" target="_blank" rel="noreferrer noopener">[링크]</a>
                 </dd>
                 <dd>
-                  오설록 커머스 사이트 (2016) <a href="https://www.osulloc.com/" target="_blank" rel="noreferrer noopener">[링크]</a>
+                  오설록 커머스 (2016) <a href="https://www.osulloc.com/" target="_blank" rel="noreferrer noopener">[링크]</a>
                 </dd>
                 <dd>
                   설화수 브랜드 브랜드 (2015) <a href="https://www.sulwhasoo.com/kr/ko/" target="_blank" rel="noreferrer noopener">[링크]</a>
                 </dd>
                 <dd>
-                  Yap 브랜드 사이트 (2015)
+                  Yap 브랜드 (2015)
                 </dd>
                 <dd>
-                  미쟝센 브랜드 사이트 (2015) <a href="http://www.miseenscene.com/main.do" target="_blank" rel="noreferrer noopener">[링크]</a>
+                  미쟝센 브랜드 (2015) <a href="http://www.miseenscene.com/main.do" target="_blank" rel="noreferrer noopener">[링크]</a>
                 </dd>
                 <dd>
-                  프리메라 브랜드 사이트 (2014) <a href="https://www.primera.co.kr/kr/ko/" target="_blank" rel="noreferrer noopener">[링크]</a>
+                  프리메라 브랜드 (2014) <a href="https://www.primera.co.kr/kr/ko/" target="_blank" rel="noreferrer noopener">[링크]</a>
                 </dd>
                 <dd>
-                  헤라 브랜드 사이트 (2014)
+                  헤라 브랜드 (2014)
                 </dd>
                 <dd>
-                  한율 브랜드 사이트 (2014) <a href="https://www.hanyul.com/kr/ko/" target="_blank" rel="noreferrer noopener">[링크]</a>
+                  한율 브랜드 (2014) <a href="https://www.hanyul.com/kr/ko/" target="_blank" rel="noreferrer noopener">[링크]</a>
                 </dd>
                 <dd>
-                  암시민연대 브랜드 사이트 (2014) <a href="https://www.apgroup.com/int/ko/" target="_blank" rel="noreferrer noopener">[링크]</a>
+                  암시민연대 브랜드 (2014) <a href="https://www.apgroup.com/int/ko/" target="_blank" rel="noreferrer noopener">[링크]</a>
                 </dd>
                 <dd>
-                  아시안브릿지 브랜드 사이트 (2013) <a href="http://www.ilovecancer.org/" target="_blank" rel="noreferrer noopener">[링크]</a>
+                  아시안브릿지 브랜드 (2013) <a href="http://www.ilovecancer.org/" target="_blank" rel="noreferrer noopener">[링크]</a>
                 </dd>
                 <dd>
-                  에이콘 출판사 브랜드 사이트 (2013) <a href="http://acornpub.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a>
+                  에이콘 출판사 브랜드 (2013) <a href="http://acornpub.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a>
                 </dd>
                 <dd>
                   청담러닝 스마트북 (2013)
                 </dd>
                 <dd>
-                  드림 성형 외과 브랜드 사이트 (2013)
+                  드림 성형 외과 브랜드 (2013)
                 </dd>
               </dl>
             </dd>

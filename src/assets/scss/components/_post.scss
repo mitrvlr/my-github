@@ -113,6 +113,8 @@
 
     dl ~ dl {
       margin-top: 3rem;
+      padding-top: 3rem;
+      border-top: .1rem solid $c-edge;
     }
   }
   &__articles {
@@ -177,8 +179,8 @@
 
       .stack-list {
         li {
-          flex-basis: percentage(math.div(1, 8));
-          max-width: percentage(math.div(1, 8));
+          flex-basis: percentage(math.div(1, 12));
+          max-width: percentage(math.div(1, 12));
         }
         &--organization {
           li {

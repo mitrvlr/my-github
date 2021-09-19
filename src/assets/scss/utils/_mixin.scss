@@ -1,3 +1,4 @@
+@use 'sass:math';
 /*
 * Mixin
 */
@@ -79,12 +80,12 @@
     margin-right: auto;
 
     @if ($size) {
-      padding-left: percentage($gutter-large/$size);
-      padding-right: percentage($gutter-large/$size);
+      padding-left: percentage(math.div($gutter-large, $size));
+      padding-right: percentage(math.div($gutter-large, $size));
       max-width: $size;
     } @else {
-      padding-left: percentage($gutter-large/$g-);
-      padding-right: percentage($gutter-large/$g-);
+      padding-left: percentage(math.div($gutter-large, $g-large));
+      padding-right: percentage(math.div($gutter-large, $g-large));
       max-width: map-get($grids, default);
     }
 

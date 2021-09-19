@@ -1,3 +1,4 @@
+@use 'sass:math';
 /*
 * post
 */
@@ -91,8 +92,8 @@
       }
 
       li {
-        flex: 1 1 percentage(1/4);
-        max-width: percentage(1/4);
+        flex: 1 1 percentage(math.div(1, 4));
+        max-width: percentage(math.div(1, 4));
         margin-top: .8rem;
         margin-bottom: .8rem;
       }
@@ -176,13 +177,13 @@
 
       .stack-list {
         li {
-          flex-basis: percentage(1/8);
-          max-width: percentage(1/8);
+          flex-basis: percentage(math.div(1, 8));
+          max-width: percentage(math.div(1, 8));
         }
         &--organization {
           li {
-            flex-basis: percentage(1/12);
-            max-width: percentage(1/12);
+            flex-basis: percentage(math.div(1, 12));
+            max-width: percentage(math.div(1, 12));
           }
         }
       }

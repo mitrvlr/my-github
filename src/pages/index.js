@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const IndexPage = async ({ data }) => {
+const IndexPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
 
   const renderListItem = (

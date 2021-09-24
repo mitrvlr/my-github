@@ -13,6 +13,23 @@ module.exports = {
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-sass`,
     {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: 17841448486442296,
+        access_token: "IGQVJYTUM3ZAGV0UGdVd0p1RWFTZAEQyd2tNSDAxdWVrWlNSZAG5ZAdjRQMVZAJMGV4OTQzU01ONWdxT09KS0piWjFHZAWVXb1BHSGpVa0drNGVDSHlCX1p5OUZA1dHhKMzFocmFjQ2NSaDhrbDMwWjljZATRkb1pzVEh1bi1MeHNN",
+        instagram_id: "mitrvlr",
+        paginate: 100,
+        maxPosts: 1000,
+        hashtags: true
+      },
+    },
+    {
+      resolve: `gatsby-source-instagram-all`,
+      options: {
+        access_token: "IGQVJYTUM3ZAGV0UGdVd0p1RWFTZAEQyd2tNSDAxdWVrWlNSZAG5ZAdjRQMVZAJMGV4OTQzU01ONWdxT09KS0piWjFHZAWVXb1BHSGpVa0drNGVDSHlCX1p5OUZA1dHhKMzFocmFjQ2NSaDhrbDMwWjljZATRkb1pzVEh1bi1MeHNN"
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
@@ -39,6 +56,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

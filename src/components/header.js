@@ -42,6 +42,9 @@ const Header = ({ siteTitle, siteDescription, siteAuthor, tags }) => {
             <Link to="/about" className="header__block__link">
               About
             </Link>
+            <Link to="/posts" className="header__block__link">
+              Posts
+            </Link>
             <Link to="/tags" className="header__block__link">
               Tags
             </Link>

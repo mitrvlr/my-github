@@ -4,16 +4,16 @@ import React from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout';
 
-const IndexPage = ({ data: { allInstagramContent}}) => {
+const FeedPage = ({ data: { allInstagramContent}}) => {
   return (
     <Layout>
       <article className='layout__row'>
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
+          gridTemplateColumns: 'repeat(4, 1fr)',
           gridGap: '1.2rem',
         }}>
-          {allInstagramContent?.edges.map(
+          {allInstagramContent.edges.map(
             item =>
               item.node.localImage && (
                 <GatsbyImage
@@ -33,10 +33,10 @@ const IndexPage = ({ data: { allInstagramContent}}) => {
       </article>
     </Layout>
   )
-};
+}
 
 export const pageQuery = graphql`
-  query InstagramPostsIndex {
+  query InstagramPosts {
     allInstagramContent {
       edges {
         node {
@@ -56,4 +56,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default IndexPage;
+export default FeedPage;

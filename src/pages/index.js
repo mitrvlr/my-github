@@ -1,11 +1,20 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
+const fetch = require(`node-fetch`);
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const IndexPage = ({ data }) => {
+const IndexPage = async ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
+
+  await fetch('https://api.instagram.com/oauth/access_token', {
+    method: 'post',
+    client_id: 217685973757907,
+    client_secret: 'b8d9a8e2bd299d4b39df7abb2a6b5b3d',
+    redirect_uri: 'https://seongha.dev/',
+    code: 'AQBkAjLVmJbtIp44XGCYgGm1VvUxeQeE7zDuT569xiTte6M9AugoBB8FY1VN9IqP2lsyf_mvIiMtHhMkRGDillyANS4QmC3cxFoxb7MfVNoWhadtFV37JnEpT08kP2dBBjvl8J54zAymTWyWE2uknVskncqGat5nY2VAVd1a1h9_mXsuFSdB71_KSRGdt1qAwO31uv1OOG-E0KJaY8b_vVc4NLo2JE4R6I8x80Ak7HMUGw'
+  });
 
   const renderListItem = (
     posts

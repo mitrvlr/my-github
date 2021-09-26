@@ -16,7 +16,7 @@ module.exports = {
       resolve: `gatsby-source-instagram`,
       options: {
         username: 17841448486442296,
-        access_token: "IGQVJYTUM3ZAGV0UGdVd0p1RWFTZAEQyd2tNSDAxdWVrWlNSZAG5ZAdjRQMVZAJMGV4OTQzU01ONWdxT09KS0piWjFHZAWVXb1BHSGpVa0drNGVDSHlCX1p5OUZA1dHhKMzFocmFjQ2NSaDhrbDMwWjljZATRkb1pzVEh1bi1MeHNN",
+        access_token: "IGQVJVY0JHLTVBcDF1Skx3cG1VZA2c2MmlqeUFTWVhjV3NJQUdQaENKbzhUaEpaNmZAFeWsxZATdxQWJ1ekhVS1AyZAFBsX1JTMHB1MGgwclNLVWt3cW1nMFhzb2V6TEpNWTk4N3lzTEJ3",
         instagram_id: "mitrvlr",
         paginate: 100,
         maxPosts: 1000,
@@ -26,7 +26,7 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram-all`,
       options: {
-        access_token: "IGQVJYTUM3ZAGV0UGdVd0p1RWFTZAEQyd2tNSDAxdWVrWlNSZAG5ZAdjRQMVZAJMGV4OTQzU01ONWdxT09KS0piWjFHZAWVXb1BHSGpVa0drNGVDSHlCX1p5OUZA1dHhKMzFocmFjQ2NSaDhrbDMwWjljZATRkb1pzVEh1bi1MeHNN"
+        access_token: "IGQVJVY0JHLTVBcDF1Skx3cG1VZA2c2MmlqeUFTWVhjV3NJQUdQaENKbzhUaEpaNmZAFeWsxZATdxQWJ1ekhVS1AyZAFBsX1JTMHB1MGgwclNLVWt3cW1nMFhzb2V6TEpNWTk4N3lzTEJ3"
       }
     },
     {

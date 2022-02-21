@@ -350,7 +350,7 @@ const IndexPage = () => {
 };
 
 export const pageQuery = graphql`
-  query AboutQuery {
+  query aboutQueryWithinIndexQuery {
     site {
       siteMetadata {
         title

@@ -42,6 +42,8 @@ import stylelint from '../assets/svg/stylelint.svg';
 import prettier from '../assets/svg/prettier.svg';
 
 
+
+
 const IndexPage = () => {
   return (
     <Layout>
@@ -349,8 +351,8 @@ const IndexPage = () => {
   );
 };
 
-export const pageQuery = graphql`
-  query IndexQuery {
+export const aboutQuery = graphql`
+  query AboutQuery {
     site {
       siteMetadata {
         title

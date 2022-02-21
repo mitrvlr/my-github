@@ -349,7 +349,7 @@ const IndexPage = () => {
   );
 };
 
-export const aboutQuery = graphql`
+export const pageQuery = graphql`
   query AboutQuery {
     site {
       siteMetadata {

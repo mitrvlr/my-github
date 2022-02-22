@@ -39,9 +39,6 @@ const Header = ({ siteTitle, siteDescription, siteAuthor, tags }) => {
             </a>
           </div>
           <div className="header__block">
-            <Link to="/about" className="header__block__link">
-              About
-            </Link>
             <Link to="/posts" className="header__block__link">
               Posts
             </Link>

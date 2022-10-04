@@ -31,15 +31,14 @@ import googleCloud from '../assets/svg/googlecloud.svg';
 
 import github from '../assets/svg/github.svg';
 import githubActions from '../assets/svg/githubactions.svg';
-import iterm from '../assets/svg/iterm2.svg';
-import visualStudioCode from '../assets/svg/visualstudiocode.svg';
-import webstorm from '../assets/svg/webstorm.svg';
-import intellijIdea from '../assets/svg/intellijidea.svg';
 import cypress from '../assets/svg/cypress.svg';
 
 import eslint from '../assets/svg/eslint.svg';
 import stylelint from '../assets/svg/stylelint.svg';
 import prettier from '../assets/svg/prettier.svg';
+
+import playwright from '../assets/svg/playwright.svg';
+import typescript from '../assets/svg/typescript.svg';
 
 
 
@@ -62,63 +61,55 @@ const IndexPage = () => {
           <ul className="stack-list">
             <li>
               <div className="stack-list__item"><img src={html} alt="html5" /></div>
-              <strong>HTML5</strong>
+              <strong>HTML</strong>
             </li>
             <li>
               <div className="stack-list__item"><img src={css} alt="css3" /></div>
-              <strong>CSS3</strong>
+              <strong>CSS</strong>
             </li>
             <li>
               <div className="stack-list__item"><img src={javascript} alt="javascript" /></div>
               <strong>JavaScript</strong>
             </li>
+            <li>
+              <div className="stack-list__item"><img src={typescript} alt="typescript" /></div>
+              <strong>TypeScript</strong>
+            </li>
+            <li>
+              <div className="stack-list__item"><img src={next} alt="Next.js" /></div>
+              <strong>Next.js</strong>
+            </li>
+            <li>
+              <div className="stack-list__item"><img src={react} alt="react" /></div>
+              <strong>react</strong>
+            </li>
           </ul>
 
-          <h4>Framework</h4>
+          <h4>Environment</h4>
           <ul className="stack-list">
+            <li>
+              <div className="stack-list__item"><img src={googleCloud} alt="googleCloud" /></div>
+              <strong>google Cloud</strong>
+            </li>
             <li>
               <div className="stack-list__item"><img src={sass} alt="sass" /></div>
               <strong>SASS</strong>
-            </li>
-            <li>
-              <div className="stack-list__item"><img src={styledComponents} alt="styledComponents" /></div>
-              <strong>StyledComponents</strong>
             </li>
             <li>
               <div className="stack-list__item"><img src={greensock} alt="greensock" /></div>
               <strong>gsap</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={react} alt="react" /></div>
-              <strong>react</strong>
-            </li>
-            <li>
-              <div className="stack-list__item"><img src={next} alt="next" /></div>
-              <strong>next</strong>
-            </li>
-            <li>
-              <div className="stack-list__item"><img src={vue} alt="vue" /></div>
-              <strong>vue</strong>
-            </li>
-            <li>
-              <div className="stack-list__item"><img src={nuxt} alt="nuxt" /></div>
-              <strong>nuxt</strong>
-            </li>
-            <li>
               <div className="stack-list__item"><img src={webpack} alt="webpack" /></div>
               <strong>webpack</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={gatsby} alt="gatsby" /></div>
-              <strong>gatsby</strong>
+              <div className="stack-list__item"><img src={mysql} alt="mysql" /></div>
+              <strong>mysql</strong>
             </li>
-          </ul>
-
-          <h4>Workspace</h4>
-          <ul className="stack-list">
             <li>
-              <div className="stack-list__item"><img src={cypress} alt="cypress" /></div>
-              <strong>cypress</strong>
+              <div className="stack-list__item"><img src={playwright} alt="playwright" /></div>
+              <strong>playwright</strong>
             </li>
             <li>
               <div className="stack-list__item"><img src={github} alt="github" /></div>
@@ -127,22 +118,6 @@ const IndexPage = () => {
             <li>
               <div className="stack-list__item"><img src={githubActions} alt="githubActions" /></div>
               <strong>github Actions</strong>
-            </li>
-            <li>
-              <div className="stack-list__item"><img src={webstorm} alt="webstorm" /></div>
-              <strong>webstorm</strong>
-            </li>
-            <li>
-              <div className="stack-list__item"><img src={intellijIdea} alt="intellijIdea" /></div>
-              <strong>intellij Idea</strong>
-            </li>
-            <li>
-              <div className="stack-list__item"><img src={visualStudioCode} alt="visualStudioCode" /></div>
-              <strong>visual Studio Code</strong>
-            </li>
-            <li>
-              <div className="stack-list__item"><img src={iterm} alt="iterm" /></div>
-              <strong>iterm</strong>
             </li>
             <li>
               <div className="stack-list__item"><img src={eslint} alt="eslint" /></div>
@@ -158,11 +133,23 @@ const IndexPage = () => {
             </li>
           </ul>
 
-          <h4>Environment</h4>
+          <h4>Experience</h4>
           <ul className="stack-list">
             <li>
-              <div className="stack-list__item"><img src={googleCloud} alt="googleCloud" /></div>
-              <strong>google Cloud</strong>
+              <div className="stack-list__item"><img src={vue} alt="vue" /></div>
+              <strong>vue</strong>
+            </li>
+            <li>
+              <div className="stack-list__item"><img src={nuxt} alt="nuxt" /></div>
+              <strong>nuxt</strong>
+            </li>
+            <li>
+              <div className="stack-list__item"><img src={styledComponents} alt="styledComponents" /></div>
+              <strong>StyledComponents</strong>
+            </li>
+            <li>
+              <div className="stack-list__item"><img src={cypress} alt="cypress" /></div>
+              <strong>cypress</strong>
             </li>
             <li>
               <div className="stack-list__item"><img src={nodejs} alt="nodejs" /></div>
@@ -173,8 +160,8 @@ const IndexPage = () => {
               <strong>express</strong>
             </li>
             <li>
-              <div className="stack-list__item"><img src={mysql} alt="mysql" /></div>
-              <strong>mysql</strong>
+              <div className="stack-list__item"><img src={gatsby} alt="gatsby" /></div>
+              <strong>gatsby</strong>
             </li>
             <li>
               <div className="stack-list__item"><img src={iconGraphql} alt="iconGraphql" /></div>
@@ -192,7 +179,7 @@ const IndexPage = () => {
 
           <h3>경력</h3>
           <dl>
-            <dt>패스트캠퍼스 <i className="period">(2019.04.08~ 재직중)</i></dt>
+            <dt>데이원컴퍼니 (구 패스트캠퍼스) <i className="period">(2019.04.08~ 재직중)</i></dt>
             <dd>
               <dl>
                 <dt>
@@ -288,8 +275,8 @@ const IndexPage = () => {
                     </li>
                   </ul>
                 </dt>
-                <dd>콜로소 웹 사이트 개발 <a href="http://coloso.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
-                <dd>패스트캠퍼스 웹 사이트 개발 <a href="http://fastcampus.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
+                <dd>콜로소 웹 사이트 프론트엔드 개발 및 서비스 설계 참여 <a href="http://coloso.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
+                <dd>패스트캠퍼스 웹 사이트 프론트엔드 개발 및 SPA 도입 <a href="http://fastcampus.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
                 <dd>프론트엔드 마크업 가이드 제작 <a href="https://github.com/fastcampusgit/markup-guide" target="_blank" rel="noreferrer noopener">[링크]</a> </dd>
               </dl>
             </dd>
@@ -333,10 +320,10 @@ const IndexPage = () => {
                 </dt>
                 <dd>
                   - 시멘틱 마크업과 웹 접근성을 고려한 마크업 최적화 <br/>
-                  - CSS 전처리기와 방법론으로 스타일 작업 생산성 향상 <br/>
+                  - CSS 전처리기와 방법론 적용 <br/>
                   - 돔 애니메이션을 사용하여 인터랙티브 웹 페이지 구현 <br />
-                  - GPU 가속을 통한 애니메이션 최적화에 대한 연구와 글 기고 <br />
-                  - 벤더, 외부 API 연동
+                  - GPU 가속을 통한 애니메이션 최적화에 대한 연구와 글 게재 <br />
+                  - 서드파티 API 연동
                 </dd>
                 <dd>
                   헤라 브랜드 사이트, CJ 문화재단, J.ESTINA BEAUTY, 아모레퍼시픽 그룹 사이트, 샘표 커머스, 오설록 커머스 웹 사이트, 설화수 브랜드 사이트,

@@ -192,7 +192,7 @@ const IndexPage = () => {
 
           <h3>경력</h3>
           <dl>
-            <dt>패스트캠퍼스 <i className="period">(2019.04.08~ 재직중)</i></dt>
+            <dt>데이원컴퍼니 (구 패스트캠퍼스) <i className="period">(2019.04.08~ 재직중)</i></dt>
             <dd>
               <dl>
                 <dt>
@@ -288,8 +288,8 @@ const IndexPage = () => {
                     </li>
                   </ul>
                 </dt>
-                <dd>콜로소 웹 사이트 개발 <a href="http://coloso.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
-                <dd>패스트캠퍼스 웹 사이트 개발 <a href="http://fastcampus.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
+                <dd>콜로소 웹 사이트 프론트엔드 개발 및 서비스 설계 참여 <a href="http://coloso.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
+                <dd>패스트캠퍼스 웹 사이트 프론트엔드 개발 및 SPA 도입 <a href="http://fastcampus.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
                 <dd>프론트엔드 마크업 가이드 제작 <a href="https://github.com/fastcampusgit/markup-guide" target="_blank" rel="noreferrer noopener">[링크]</a> </dd>
               </dl>
             </dd>
@@ -333,10 +333,10 @@ const IndexPage = () => {
                 </dt>
                 <dd>
                   - 시멘틱 마크업과 웹 접근성을 고려한 마크업 최적화 <br/>
-                  - CSS 전처리기와 방법론으로 스타일 작업 생산성 향상 <br/>
+                  - CSS 전처리기와 방법론 적용 <br/>
                   - 돔 애니메이션을 사용하여 인터랙티브 웹 페이지 구현 <br />
-                  - GPU 가속을 통한 애니메이션 최적화에 대한 연구와 글 기고 <br />
-                  - 벤더, 외부 API 연동
+                  - GPU 가속을 통한 애니메이션 최적화에 대한 연구와 글 게재 <br />
+                  - 서드파티 API 연동
                 </dd>
                 <dd>
                   헤라 브랜드 사이트, CJ 문화재단, J.ESTINA BEAUTY, 아모레퍼시픽 그룹 사이트, 샘표 커머스, 오설록 커머스 웹 사이트, 설화수 브랜드 사이트,

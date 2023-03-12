@@ -50,10 +50,18 @@ const IndexPage = () => {
         <div className="post__panel">
           <h2>전성하 <i className="job">프론트엔드</i></h2>
           <h3>소개</h3>
+
+          <blockquote>
+            모든 문제에는 아직 아무도 찾아내지 못한 다른 해결책이 존재한다.
+          </blockquote>
+          <cite>제럴드 M. 와인버그</cite>
+
           <ul>
-            <li># 프론트엔드 개발합니다.</li>
-            <li># 좋은 개발 문화, 함께 성장하는 문화에 관심이 많습니다.</li>
-            <li># 하드 스킬과 소프트 스킬 고루 정진하려 노력하고 있습니다.️</li>
+            <li>🎖 프론트엔드 개발합니다</li>
+            <li>🎖 코드는 문제 해결 수단 중 하나라고 생각합니다</li>
+            <li>🎖 고민의 시작부터 해결해나가는 과정을 좋아합니다</li>
+            <li>🎖 개인과 팀의 양방향으로 성장하는 문화를 지향합니다</li>
+            <li>🎖 책 읽기와 생각하기를 좋아합니다</li>
           </ul>
 
           <h3>보유 기술</h3>
@@ -179,106 +187,105 @@ const IndexPage = () => {
 
           <h3>경력</h3>
           <dl>
-            <dt>데이원컴퍼니 (구 패스트캠퍼스) <i className="period">(2019.04.08~ 재직중)</i></dt>
+            <dt>데이원컴퍼니 <i className="period">(2019.04.08~ 재직중)</i></dt>
+            <dd><em>2023</em> 콜로소 해외 서비스 개발, Next.js 도입</dd>
+            <dd><em>2022</em> 콜로소 국내 서비스 Next.js 도입</dd>
+            <dd><em>2021</em> 콜로소 <a href="http://coloso.jp/" target="_blank" rel="noreferrer noopener">일본</a>, <a href="http://coloso.us/" target="_blank" rel="noreferrer noopener">미국</a> 서비스 개발 Nuxt.js 도입</dd>
+            <dd><em>2020</em> 콜로소 국내 Nuxt.js 도입 <a href="http://coloso.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
+            <dd><em>2019</em> 패스트캠퍼스 웹 사이트 프론트엔드 개발, 일부 vue 전환 <a href="http://fastcampus.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
+            <dd><em>2019</em> 프론트엔드 마크업 가이드 제작 <a href="https://github.com/fastcampusgit/markup-guide" target="_blank" rel="noreferrer noopener">[링크]</a> </dd>
             <dd>
-              <dl>
-                <dt>
-                  <em>사용 기술</em>
-                  <ul className="stack-list stack-list--organization">
-                    <li>
-                      <div className="stack-list__item"><img src={html} alt="html5" /></div>
-                      <strong>HTML5</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={css} alt="css3" /></div>
-                      <strong>CSS3</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={javascript} alt="javascript" /></div>
-                      <strong>JavaScript</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={vue} alt="vue" /></div>
-                      <strong>vue</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={nuxt} alt="nuxt" /></div>
-                      <strong>nuxt</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={react} alt="react" /></div>
-                      <strong>react</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={webpack} alt="webpack" /></div>
-                      <strong>webpack</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={sass} alt="sass" /></div>
-                      <strong>SASS</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={styledComponents} alt="styledComponents" /></div>
-                      <strong>StyledComponents</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={greensock} alt="greensock" /></div>
-                      <strong>gsap</strong>
-                    </li>
-                  </ul>
+              <em>사용 기술</em>
+              <ul className="stack-list stack-list--organization">
+                <li>
+                  <div className="stack-list__item"><img src={html} alt="html5" /></div>
+                  <strong>HTML5</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={css} alt="css3" /></div>
+                  <strong>CSS3</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={javascript} alt="javascript" /></div>
+                  <strong>JavaScript</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={vue} alt="vue" /></div>
+                  <strong>vue</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={nuxt} alt="nuxt" /></div>
+                  <strong>nuxt</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={react} alt="react" /></div>
+                  <strong>react</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={webpack} alt="webpack" /></div>
+                  <strong>webpack</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={sass} alt="sass" /></div>
+                  <strong>SASS</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={styledComponents} alt="styledComponents" /></div>
+                  <strong>StyledComponents</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={greensock} alt="greensock" /></div>
+                  <strong>gsap</strong>
+                </li>
+              </ul>
 
-                  <em>환경</em>
-                  <ul className="stack-list stack-list--organization">
-                    <li>
-                      <div className="stack-list__item"><img src={googleCloud} alt="googleCloud" /></div>
-                      <strong>google Cloud</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={nodejs} alt="nodejs" /></div>
-                      <strong>nodejs</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={express} alt="express" /></div>
-                      <strong>express</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={mysql} alt="mysql" /></div>
-                      <strong>mysql</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={docker} alt="docker" /></div>
-                      <strong>docker</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={cypress} alt="cypress" /></div>
-                      <strong>cypress</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={github} alt="github" /></div>
-                      <strong>github</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={githubActions} alt="githubActions" /></div>
-                      <strong>github Actions</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={eslint} alt="eslint" /></div>
-                      <strong>eslint</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={stylelint} alt="stylelint" /></div>
-                      <strong>stylelint</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={prettier} alt="prettier" /></div>
-                      <strong>prettier</strong>
-                    </li>
-                  </ul>
-                </dt>
-                <dd>콜로소 웹 사이트 프론트엔드 개발 및 서비스 설계 참여 <a href="http://coloso.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
-                <dd>패스트캠퍼스 웹 사이트 프론트엔드 개발 및 SPA 도입 <a href="http://fastcampus.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
-                <dd>프론트엔드 마크업 가이드 제작 <a href="https://github.com/fastcampusgit/markup-guide" target="_blank" rel="noreferrer noopener">[링크]</a> </dd>
-              </dl>
+              <em>환경</em>
+              <ul className="stack-list stack-list--organization">
+                <li>
+                  <div className="stack-list__item"><img src={googleCloud} alt="googleCloud" /></div>
+                  <strong>google Cloud</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={nodejs} alt="nodejs" /></div>
+                  <strong>nodejs</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={express} alt="express" /></div>
+                  <strong>express</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={mysql} alt="mysql" /></div>
+                  <strong>mysql</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={docker} alt="docker" /></div>
+                  <strong>docker</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={cypress} alt="cypress" /></div>
+                  <strong>cypress</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={github} alt="github" /></div>
+                  <strong>github</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={githubActions} alt="githubActions" /></div>
+                  <strong>github Actions</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={eslint} alt="eslint" /></div>
+                  <strong>eslint</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={stylelint} alt="stylelint" /></div>
+                  <strong>stylelint</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={prettier} alt="prettier" /></div>
+                  <strong>prettier</strong>
+                </li>
+              </ul>
             </dd>
           </dl>
           <dl>
@@ -326,8 +333,7 @@ const IndexPage = () => {
                   - 서드파티 API 연동
                 </dd>
                 <dd>
-                  헤라 브랜드 사이트, CJ 문화재단, J.ESTINA BEAUTY, 아모레퍼시픽 그룹 사이트, 샘표 커머스, 오설록 커머스 웹 사이트, 설화수 브랜드 사이트,
-                  Yap, 미쟝센, 프리메라, 한율 등 코스메틱 브랜드 사이트를 비롯한 다양한 브랜드 사이트 제작
+                  코스메틱 브랜드 사이트 중심으로 인터랙티브 웹 사이트 제작
                 </dd>
               </dl>
             </dd>

@@ -236,14 +236,6 @@ const IndexPage = () => {
                   <strong>Emotion.js</strong>
                 </li>
                 <li>
-                  <div className="stack-list__item"><img src={vue} alt="vue" /></div>
-                  <strong>vue</strong>
-                </li>
-                <li>
-                  <div className="stack-list__item"><img src={nuxt} alt="nuxt" /></div>
-                  <strong>nuxt</strong>
-                </li>
-                <li>
                   <div className="stack-list__item"><img src={webpack} alt="webpack" /></div>
                   <strong>webpack</strong>
                 </li>
@@ -264,24 +256,16 @@ const IndexPage = () => {
                   <strong>google Cloud</strong>
                 </li>
                 <li>
-                  <div className="stack-list__item"><img src={nodejs} alt="nodejs" /></div>
-                  <strong>nodejs</strong>
-                </li>
-                <li>
-                  <div className="stack-list__item"><img src={express} alt="express" /></div>
-                  <strong>express</strong>
-                </li>
-                <li>
                   <div className="stack-list__item"><img src={mysql} alt="mysql" /></div>
                   <strong>mysql</strong>
                 </li>
                 <li>
-                  <div className="stack-list__item"><img src={docker} alt="docker" /></div>
-                  <strong>docker</strong>
+                  <div className="stack-list__item"><img src={nodejs} alt="nodejs" /></div>
+                  <strong>nodejs</strong>
                 </li>
                 <li>
-                  <div className="stack-list__item"><img src={cypress} alt="cypress" /></div>
-                  <strong>cypress</strong>
+                  <div className="stack-list__item"><img src={docker} alt="docker" /></div>
+                  <strong>docker</strong>
                 </li>
                 <li>
                   <div className="stack-list__item"><img src={github} alt="github" /></div>
@@ -302,6 +286,26 @@ const IndexPage = () => {
                 <li>
                   <div className="stack-list__item"><img src={prettier} alt="prettier" /></div>
                   <strong>prettier</strong>
+                </li>
+              </ul>
+
+              <em>Deprecated</em>
+              <ul className="stack-list stack-list--organization">
+                <li>
+                  <div className="stack-list__item"><img src={vue} alt="vue" /></div>
+                  <strong>vue</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={nuxt} alt="nuxt" /></div>
+                  <strong>nuxt</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={cypress} alt="cypress" /></div>
+                  <strong>cypress</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={express} alt="express" /></div>
+                  <strong>express</strong>
                 </li>
               </ul>
             </dd>

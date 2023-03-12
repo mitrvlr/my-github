@@ -191,9 +191,12 @@ const IndexPage = () => {
             <dd><em>2023</em> 콜로소 해외 서비스 개발, Next.js 도입</dd>
             <dd><em>2022</em> 콜로소 국내 서비스 Next.js 도입</dd>
             <dd><em>2021</em> 콜로소 <a href="http://coloso.jp/" target="_blank" rel="noreferrer noopener">일본</a>, <a href="http://coloso.us/" target="_blank" rel="noreferrer noopener">미국</a> 서비스 개발 Nuxt.js 도입</dd>
-            <dd><em>2020</em> 콜로소 국내 Nuxt.js 도입 <a href="http://coloso.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
+            <dd><em>2020</em> 콜로소 <a href="http://coloso.co.kr/" target="_blank" rel="noreferrer noopener">국내</a> Nuxt.js 도입 </dd>
             <dd><em>2019</em> 패스트캠퍼스 웹 사이트 프론트엔드 개발, 일부 vue 전환 <a href="http://fastcampus.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
             <dd><em>2019</em> 프론트엔드 마크업 가이드 제작 <a href="https://github.com/fastcampusgit/markup-guide" target="_blank" rel="noreferrer noopener">[링크]</a> </dd>
+            <dd>Next.js 배포 단계와 최적화 경험</dd>
+            <dd>프로젝트 구조와 Multilingual 설계 경험</dd>
+            <dd>5명 규모의 프론트엔드 팀 운영 경험</dd>
             <dd>
               <em>사용 기술</em>
               <ul className="stack-list stack-list--organization">
@@ -210,6 +213,26 @@ const IndexPage = () => {
                   <strong>JavaScript</strong>
                 </li>
                 <li>
+                  <div className="stack-list__item"><img src={typescript} alt="typescript" /></div>
+                  <strong>TypeScript</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={react} alt="react" /></div>
+                  <strong>react</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={next} alt="next" /></div>
+                  <strong>Next.js</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={playwright} alt="playwright" /></div>
+                  <strong>Playwright</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={styledComponents} alt="emotion" /></div>
+                  <strong>Emotion.js</strong>
+                </li>
+                <li>
                   <div className="stack-list__item"><img src={vue} alt="vue" /></div>
                   <strong>vue</strong>
                 </li>
@@ -218,20 +241,12 @@ const IndexPage = () => {
                   <strong>nuxt</strong>
                 </li>
                 <li>
-                  <div className="stack-list__item"><img src={react} alt="react" /></div>
-                  <strong>react</strong>
-                </li>
-                <li>
                   <div className="stack-list__item"><img src={webpack} alt="webpack" /></div>
                   <strong>webpack</strong>
                 </li>
                 <li>
                   <div className="stack-list__item"><img src={sass} alt="sass" /></div>
                   <strong>SASS</strong>
-                </li>
-                <li>
-                  <div className="stack-list__item"><img src={styledComponents} alt="styledComponents" /></div>
-                  <strong>StyledComponents</strong>
                 </li>
                 <li>
                   <div className="stack-list__item"><img src={greensock} alt="greensock" /></div>
@@ -291,51 +306,47 @@ const IndexPage = () => {
           <dl>
             <dt>디지털 에이전시 이롭게 <i className="period">(2013.04.01~2018.06.28)</i></dt>
             <dd>
-              <dl>
-                <dt>
-                  <em>사용 기술</em>
-                  <ul className="stack-list stack-list--organization">
-                    <li>
-                      <div className="stack-list__item"><img src={html} alt="html5" /></div>
-                      <strong>HTML5</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={css} alt="css3" /></div>
-                      <strong>CSS3</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={sass} alt="sass" /></div>
-                      <strong>SASS</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={javascript} alt="javascript" /></div>
-                      <strong>javascript</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={jquery} alt="jquery" /></div>
-                      <strong>jquery</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={greensock} alt="greensock" /></div>
-                      <strong>gsap</strong>
-                    </li>
-                    <li>
-                      <div className="stack-list__item"><img src={webpack} alt="webpack" /></div>
-                      <strong>webpack</strong>
-                    </li>
-                  </ul>
-                </dt>
-                <dd>
-                  - 시멘틱 마크업과 웹 접근성을 고려한 마크업 최적화 <br/>
-                  - CSS 전처리기와 방법론 적용 <br/>
-                  - 돔 애니메이션을 사용하여 인터랙티브 웹 페이지 구현 <br />
-                  - GPU 가속을 통한 애니메이션 최적화에 대한 연구와 글 게재 <br />
-                  - 서드파티 API 연동
-                </dd>
-                <dd>
-                  코스메틱 브랜드 사이트 중심으로 인터랙티브 웹 사이트 제작
-                </dd>
-              </dl>
+              - 시멘틱 마크업과 웹 접근성을 고려한 마크업 최적화 <br/>
+              - CSS 전처리기와 방법론 적용 <br/>
+              - 돔 애니메이션을 사용하여 인터랙티브 웹 페이지 구현 <br />
+              - GPU 가속을 통한 애니메이션 최적화에 대한 연구 투고 <br />
+              - 서드파티 API 연동
+            </dd>
+            <dd>
+              코스메틱 브랜드 사이트 중심으로 인터랙티브 웹 사이트 제작
+            </dd>
+            <dd>
+              <em>사용 기술</em>
+              <ul className="stack-list stack-list--organization">
+                <li>
+                  <div className="stack-list__item"><img src={html} alt="html5" /></div>
+                  <strong>HTML5</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={css} alt="css3" /></div>
+                  <strong>CSS3</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={sass} alt="sass" /></div>
+                  <strong>SASS</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={javascript} alt="javascript" /></div>
+                  <strong>javascript</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={jquery} alt="jquery" /></div>
+                  <strong>jquery</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={greensock} alt="greensock" /></div>
+                  <strong>gsap</strong>
+                </li>
+                <li>
+                  <div className="stack-list__item"><img src={webpack} alt="webpack" /></div>
+                  <strong>webpack</strong>
+                </li>
+              </ul>
             </dd>
           </dl>
         </div>

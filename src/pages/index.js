@@ -49,13 +49,12 @@ const IndexPage = () => {
       <div className="layout__row">
         <div className="post__panel">
           <h2>전성하 <i className="job">프론트엔드</i></h2>
-          <h3>소개</h3>
-
           <blockquote>
-            모든 문제에는 아직 아무도 찾아내지 못한 다른 해결책이 존재한다.
+            <p>모든 문제에는 아직 아무도 찾아내지 못한 다른 해결책이 존재한다</p>
           </blockquote>
           <cite>제럴드 M. 와인버그</cite>
 
+          <h3>소개</h3>
           <ul>
             <li>🎖 프론트엔드 개발합니다</li>
             <li>🎖 코드는 문제 해결 수단 중 하나라고 생각합니다</li>

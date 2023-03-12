@@ -193,9 +193,13 @@ const IndexPage = () => {
             <dd><em>2020</em> 콜로소 <a href="http://coloso.co.kr/" target="_blank" rel="noreferrer noopener">국내</a> Nuxt.js 도입 </dd>
             <dd><em>2019</em> 패스트캠퍼스 웹 사이트 프론트엔드 개발, 일부 vue 전환 <a href="http://fastcampus.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
             <dd><em>2019</em> 프론트엔드 마크업 가이드 제작 <a href="https://github.com/fastcampusgit/markup-guide" target="_blank" rel="noreferrer noopener">[링크]</a> </dd>
-            <dd>Next.js 배포 단계와 최적화 경험</dd>
-            <dd>프로젝트 구조와 Multilingual 설계 경험</dd>
-            <dd>5명 규모의 프론트엔드 팀 운영 경험</dd>
+            <dd>
+              - Next.js 배포와 인프라 레벨 최적화 경험 <br/>
+              - 프론트엔드 구조 설계 경험 <br/>
+              - Multilingual 설계 경험 <br/>
+              - 데이터 모델 설계 경험 <br/>
+              - 소규모(5명)의 프론트엔드 팀 운영 경험 <br />
+            </dd>
             <dd>
               <em>사용 기술</em>
               <ul className="stack-list stack-list--organization">

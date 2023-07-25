@@ -187,18 +187,20 @@ const IndexPage = () => {
           <h3>경력</h3>
           <dl>
             <dt>데이원컴퍼니 <i className="period">(2019.04.08~ 재직중)</i></dt>
-            <dd><em>2023</em> 콜로소 해외 서비스 개발, Next.js 도입</dd>
-            <dd><em>2022</em> 콜로소 국내 서비스 Next.js 도입</dd>
-            <dd><em>2021</em> 콜로소 <a href="http://coloso.jp/" target="_blank" rel="noreferrer noopener">일본</a>, <a href="http://coloso.us/" target="_blank" rel="noreferrer noopener">미국</a> 서비스 개발 Nuxt.js 도입</dd>
-            <dd><em>2020</em> 콜로소 <a href="http://coloso.co.kr/" target="_blank" rel="noreferrer noopener">국내</a> Nuxt.js 도입 </dd>
-            <dd><em>2019</em> 패스트캠퍼스 웹 사이트 프론트엔드 개발, 일부 vue 전환 <a href="http://fastcampus.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
+            <dd><em>2023</em> 콜로소 서비스 내 RSC 도입 및 프론트엔드 성능 개선</dd>
+            <dd><em>2023</em> 콜로소 <a href="https://coloso.global/" target="_blank" rel="noreferrer noopener">글로벌</a> 서비스 개발, Next.js `/app`, RSC (v13.4.x) 도입</dd>
+            <dd><em>2023</em> GCP 를 사용한 개발 환경 구성</dd>
+            <dd><em>2022</em> 콜로소 국내 서비스 Next.js (v12.x) 도입</dd>
+            <dd><em>2021</em> 콜로소 <a href="https://coloso.jp/" target="_blank" rel="noreferrer noopener">일본</a>, 미국 서비스 개발 Nuxt.js (v2.x) 도입</dd>
+            <dd><em>2020</em> 콜로소 <a href="https://coloso.co.kr/" target="_blank" rel="noreferrer noopener">국내</a> Nuxt.js 도입 </dd>
+            <dd><em>2019</em> 패스트캠퍼스 웹 사이트 프론트엔드 개발, 일부 vue 전환 <a href="https://fastcampus.co.kr/" target="_blank" rel="noreferrer noopener">[링크]</a></dd>
             <dd><em>2019</em> 프론트엔드 마크업 가이드 제작 <a href="https://github.com/fastcampusgit/markup-guide" target="_blank" rel="noreferrer noopener">[링크]</a> </dd>
             <dd>
-              - Next.js 배포와 인프라 레벨 최적화 경험 <br/>
-              - 프론트엔드 구조 설계 경험 <br/>
-              - Multilingual 설계 경험 <br/>
-              - 데이터 모델 설계 경험 <br/>
-              - 소규모(5명)의 프론트엔드 팀 운영 경험 <br />
+              - Next.js 인프라 레벨 어플리케이션 최적화 <br/>
+              - 프론트엔드 전체 아키텍처 설계, 컴포넌트 구조 설계와 개선 <br/>
+              - i18n, multilingual (ui, language token) 전략 설계 <br/>
+              - 데이터 모델링 참여 및 일부 설계 <br/>
+              - 소규모(5명)의 프론트엔드 팀 운영 <br />
             </dd>
             <dd>
               <em>사용 기술</em>
@@ -313,10 +315,11 @@ const IndexPage = () => {
           <dl>
             <dt>디지털 에이전시 이롭게 <i className="period">(2013.04.01~2018.06.28)</i></dt>
             <dd>
+              - Grunt, gulp, handlebar.js 등을 사용한 워크 스페이스 개선<br/>
               - 시멘틱 마크업과 웹 접근성을 고려한 마크업 최적화 <br/>
               - CSS 전처리기와 방법론 적용 <br/>
               - 돔 애니메이션을 사용하여 인터랙티브 웹 페이지 구현 <br />
-              - GPU 가속을 통한 애니메이션 최적화에 대한 연구 투고 <br />
+              - GPU 가속을 통한 애니메이션 최적화에 대한 사내 블로그 기고 <br />
               - 서드파티 API 연동
             </dd>
             <dd>
